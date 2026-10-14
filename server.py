@@ -5,6 +5,7 @@ import json
 import os
 import re
 import threading
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -12,8 +13,11 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT / '.local' / 'articles.json'
+PUBLIC_MODE = os.environ.get('PUBLIC_MODE', '1') == '1'
+DATA = ROOT / '.local' / ('public-feeds.json' if PUBLIC_MODE else 'articles.json')
 LOCK = threading.Lock()
+UPDATE_LOCK = threading.Lock()
+LAST_UPDATE_ATTEMPT = None
 SOURCES = [
     {'id': 'guardian-science', 'name': 'The Guardian · Science', 'url': 'https://www.theguardian.com/science/rss'},
     {'id': 'guardian-environment', 'name': 'The Guardian · Environment', 'url': 'https://www.theguardian.com/environment/rss'},
@@ -121,26 +125,44 @@ def fetch(source):
  return result
 
 class Handler(SimpleHTTPRequestHandler):
+ timeout = 20
  def __init__(self,*args,**kwargs): super().__init__(*args,directory=str(ROOT/'static'),**kwargs)
+ def end_headers(self):
+  self.send_header('X-Content-Type-Options', 'nosniff')
+  self.send_header('Referrer-Policy', 'strict-origin-when-cross-origin')
+  self.send_header('Content-Security-Policy', "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'")
+  super().end_headers()
  def respond(self,data,status=200):
   raw=json.dumps(data,ensure_ascii=False).encode()
-  self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8'); self.send_header('Content-Length',str(len(raw))); self.end_headers(); self.wfile.write(raw)
+  self.send_response(status); self.send_header('Content-Type','application/json; charset=utf-8'); self.send_header('Cache-Control','no-store'); self.send_header('Content-Length',str(len(raw))); self.end_headers(); self.wfile.write(raw)
  def do_GET(self):
+  if self.path=='/healthz':
+   self.respond({'status':'ok'}); return
   if self.path=='/api/articles':
    with LOCK: state=load()
    self.respond({**state,'articles':[decorate(a) for a in state['articles']],'sources':SOURCES,'topic_rules':TOPICS,'exam_rules':EXAMS}); return
   super().do_GET()
  def do_POST(self):
+  global LAST_UPDATE_ATTEMPT
   # Restrict mutations to same-origin browser requests; no arbitrary URL fetching endpoint.
   origin=self.headers.get('Origin')
   if origin and urlparse(origin).netloc!=self.headers.get('Host'):
    self.respond({'error':'跨站请求被拒绝'},403); return
   if self.path not in ('/api/update','/api/import'):
    self.respond({'error':'不存在的接口'},404); return
+  if PUBLIC_MODE and self.path=='/api/import':
+   self.respond({'error':'公开网站仅支持浏览器本地导入，不接受或存储访客正文。'},403); return
   try:
    size=int(self.headers.get('Content-Length','0'))
-   if size>1_000_000: raise ValueError('导入内容过大')
+   if size<0 or size>(4096 if self.path=='/api/update' else 1_000_000): raise ValueError('请求大小无效或超出限制')
    data=json.loads(self.rfile.read(size) or b'{}')
+   if not isinstance(data,dict): raise ValueError('请求必须为 JSON 对象')
+   if PUBLIC_MODE and self.path=='/api/update':
+    with UPDATE_LOCK:
+     current=time.monotonic()
+     if LAST_UPDATE_ATTEMPT is not None and current-LAST_UPDATE_ATTEMPT<60:
+      self.respond({'error':'来源正在更新或距离上次尝试不足 60 秒，请稍后再试。'},429); return
+     LAST_UPDATE_ATTEMPT=current
    with LOCK:
     state=load()
     if self.path=='/api/update':
@@ -158,6 +180,8 @@ class Handler(SimpleHTTPRequestHandler):
       except Exception as exc:
        state['statuses'][source['id']]={**old,'name':source['name'],'state':'失败','error':str(exc)[:240],'checked_at':now()}
      if succeeded: state['last_success']=now()
+     if PUBLIC_MODE:
+      state['articles']=state['articles'][-500:]
     else:
      title=str(data.get('title','')).strip()[:500]
      url=str(data.get('url','')).strip()
@@ -173,5 +197,6 @@ class Handler(SimpleHTTPRequestHandler):
   except (ValueError,TypeError) as exc: self.respond({'error':str(exc)},400)
 
 if __name__=='__main__':
+ http = ThreadingHTTPServer(('0.0.0.0',int(os.environ.get('PORT','8000'))),Handler)
  print('Reading Desk on port '+os.environ.get('PORT','8000'),flush=True)
- ThreadingHTTPServer(('0.0.0.0',int(os.environ.get('PORT','8000'))),Handler).serve_forever()
+ http.serve_forever()

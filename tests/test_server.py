@@ -31,7 +31,7 @@ class ReadingTests(unittest.TestCase):
   self.assertEqual(a['body'],'');self.assertEqual(a['summary_en'],'')
   self.assertNotIn('Secret',json.dumps(a));self.assertTrue(a['published_at'])
  def test_http_import_and_failed_update_preserves_content(self):
-  with tempfile.TemporaryDirectory() as temp,patch.object(server,'DATA',Path(temp)/'data.json'):
+  with tempfile.TemporaryDirectory() as temp,patch.object(server,'DATA',Path(temp)/'data.json'),patch.object(server,'PUBLIC_MODE',False):
    http=server.ThreadingHTTPServer(('127.0.0.1',0),server.Handler)
    thread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()
    base='http://127.0.0.1:'+str(http.server_port)
@@ -57,5 +57,41 @@ class ReadingTests(unittest.TestCase):
     self.assertEqual(len(result['articles']),8)
     with self.assertRaises(urllib.error.HTTPError):post('/api/import',{'title':'bad','url':'javascript:alert(1)'})
    finally:http.shutdown();http.server_close();thread.join()
+
+ def test_public_mode_keeps_imports_private_and_throttles_updates(self):
+  with tempfile.TemporaryDirectory() as temp,patch.object(server,'DATA',Path(temp)/'public.json'),patch.object(server,'PUBLIC_MODE',True),patch.object(server,'LAST_UPDATE_ATTEMPT',None):
+   http=server.ThreadingHTTPServer(('127.0.0.1',0),server.Handler)
+   thread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()
+   base='http://127.0.0.1:'+str(http.server_port)
+   def post(path,data):
+    with urllib.request.urlopen(urllib.request.Request(base+path,data=json.dumps(data).encode(),headers={'Content-Type':'application/json'})) as r:return json.load(r)
+   try:
+    with server.LOCK:
+     with urllib.request.urlopen(base+'/healthz') as r:
+      self.assertEqual(json.load(r)['status'],'ok')
+      self.assertEqual(r.headers['Cache-Control'],'no-store')
+      self.assertIn("frame-ancestors 'none'",r.headers['Content-Security-Policy'])
+    with self.assertRaises(urllib.error.HTTPError) as ctx:
+     post('/api/import',{'title':'Private','url':'https://example.com/private','body':'Private full text','authorized':True})
+    self.assertEqual(ctx.exception.code,403)
+    self.assertFalse(server.DATA.exists())
+    with patch.object(server,'fetch',side_effect=ValueError('unavailable')) as fetch:
+     state=post('/api/update',{})
+     self.assertEqual(len(state['articles']),6)
+     with self.assertRaises(urllib.error.HTTPError) as ctx:post('/api/update',{})
+     self.assertEqual(ctx.exception.code,429)
+     self.assertEqual(fetch.call_count,3)
+    with urllib.request.urlopen(base+'/api/articles') as r:
+     self.assertNotIn('Private',r.read().decode())
+   finally:http.shutdown();http.server_close();thread.join()
+
+ def test_invalid_payload_is_rejected(self):
+  http=server.ThreadingHTTPServer(('127.0.0.1',0),server.Handler)
+  thread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()
+  try:
+   request=urllib.request.Request('http://127.0.0.1:'+str(http.server_port)+'/api/update',data=b'[]',headers={'Content-Type':'application/json'})
+   with self.assertRaises(urllib.error.HTTPError) as ctx:urllib.request.urlopen(request)
+   self.assertEqual(ctx.exception.code,400)
+  finally:http.shutdown();http.server_close();thread.join()
 
 if __name__=='__main__':unittest.main()

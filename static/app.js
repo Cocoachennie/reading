@@ -3,13 +3,21 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const safeURL=value=>{try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password?u.href:''}catch{return ''}};
 let state={articles:[],statuses:{}}, exam='考研英语',view='all', busy=false;
-let personal={version:1,saved:{},history:{}};
-try { const stored=JSON.parse(localStorage.getItem('leaf-personal')||'null');if(stored&&stored.version===1&&stored.saved&&stored.history)personal=stored; }catch { toast('本地记录读取失败，请使用备份恢复。'); }
+let personal={version:1,saved:{},history:{},imports:{}};
+try { const stored=JSON.parse(localStorage.getItem('leaf-personal')||'null');if(stored&&stored.version===1&&stored.saved&&stored.history)personal={...stored,imports:stored.imports||{}}; }catch { toast('本地记录读取失败，请使用备份恢复。'); }
 function toast(message){$('#toast').textContent=message;$('#toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').hidden=true,4200)}
 function persist(){try{localStorage.setItem('leaf-personal',JSON.stringify(personal));return true}catch{toast('浏览器存储不可用。当前记录仅在本次会话中保留，请导出备份。');return false}}
 function date(v){if(!v)return '日期未知';const d=new Date(v);return Number.isNaN(d.getTime())?'日期未知':d.toLocaleDateString('zh-CN')}
 function stamp(v){return v?new Date(v).toLocaleString('zh-CN'):'尚无成功更新'}
 function metadata(a){const {body,analysis,...rest}=a;return rest}
+function localAnalysis(body){
+ if(!body.trim())return {available:false,words:null,difficulty:null,coverage:null,basis:'暂无法分析：未获得获授权的完整正文。'};
+ const words=body.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g)||[];
+ const sentences=body.split(/[.!?]+/).filter(s=>/[A-Za-z]/.test(s));
+ if(words.length<80||sentences.length<3)return {available:false,words:words.length,difficulty:null,coverage:null,basis:'正文不足 80 个英文词或 3 句；样本过短，不估计难度。'};
+ const avg=words.length/sentences.length,long=100*words.filter(w=>w.length>=8).length/words.length;
+ return {available:true,words:words.length,difficulty:null,coverage:null,average_sentence:Math.round(avg*10)/10,long_word_ratio:Math.round(long*10)/10,basis:`启发式估计：平均句长 ${avg.toFixed(1)} 词，≥8 字母词占比 ${long.toFixed(1)}%。长词仅为复杂度代理；非官方分级，未分析语法或 CEFR。正文仅在当前浏览器计算与保存。`};
+}
 function adjusted(a){
  const text=[a.title,a.summary_en,a.body].filter(Boolean).join(' ').toLowerCase();
  const cues=Number($('#cue-min').value)||2;
@@ -17,11 +25,11 @@ function adjusted(a){
  const words=text.split(/\s+/);const windows=[];for(let i=0;i<Math.max(1,words.length);i+=30)windows.push(words.slice(i,i+60).join(' '));
  const topics=Object.keys(hits).filter(t=>windows.some(w=>hits[t].filter(term=>new RegExp('\\b'+term+'\\b','i').test(w)).length>=cues));
  const recommendations=Object.entries(state.exam_rules||{}).flatMap(([name,allowed])=>{const ts=topics.filter(t=>allowed.includes(t));return ts.length?[{exam:name,reason:`主题初筛：${ts.join('、')}；多个线索在 60 词局部语境共同出现（${ts.flatMap(t=>hits[t]).slice(0,5).join(' / ')}）。需人工核对语境；不代表考试采用或全文难度适配。`}]:[]});
- const analysis={...(a.analysis||{available:false,words:null,difficulty:null,coverage:null,basis:'暂无法分析：备份不含完整正文。'})};
+ const analysis={...(a.browser_only?localAnalysis(a.body||''):a.analysis||{available:false,words:null,difficulty:null,coverage:null,basis:'暂无法分析：备份不含完整正文。'})};
  if(analysis.available){analysis.difficulty=analysis.average_sentence>=Number($('#hard-sentence').value)||analysis.long_word_ratio>=27?'较难':analysis.average_sentence>=Number($('#medium-sentence').value)||analysis.long_word_ratio>=17?'中等':'较易';}
  return {...a,topics,recommendations,analysis};
 }
-function articles(){const all=new Map(state.articles.map(a=>[a.id,a]));for(const a of Object.values(personal.saved))if(!all.has(a.id))all.set(a.id,a);return [...all.values()].map(adjusted)}
+function articles(){const all=new Map(state.articles.map(a=>[a.id,a]));for(const a of Object.values(personal.imports))all.set(a.id,a);for(const a of Object.values(personal.saved))if(!all.has(a.id))all.set(a.id,a);return [...all.values()].map(adjusted)}
 function syncOptions(){for(const [id,values]of [['topic',Object.keys(state.topic_rules||{})],['source',[...new Set(articles().map(a=>a.source))].sort()]]){const select=$('#'+id),current=select.value;select.innerHTML=`<option value="">全部${id==='topic'?'主题':'来源'}</option>`+values.map(v=>`<option>${esc(v)}</option>`).join('');select.value=values.includes(current)?current:''}}
 function render(){
  $('#saved-count').textContent=Object.keys(personal.saved).length;
@@ -69,7 +77,15 @@ $('#articles').addEventListener('click',e=>{
  if(b.dataset.reason){const analysis=a.analysis;$('#detail-content').innerHTML=`<h3 class="detail-title">${esc(a.title)}</h3><p>${a.demo?'虚构演示内容 · ':''}推荐阅读来源 · 未核实真题采用</p><div class="detail-section"><strong>第一阶段 · 主题初筛</strong>${a.recommendations.length?a.recommendations.map(r=>`<p><strong>${esc(r.exam)}</strong>：${esc(r.reason)}</p>`).join(''):'<p>未达到多个线索匹配阈值，暂不推荐。单个关键词不构成相关性证据。</p>'}<p>线索范围：${a.body?'用户确认授权的全文、标题与简介':'仅标题与用户提供的英文简介（元数据初筛）'}。编辑主题库不是历年真题语料库，需要至少多个独立线索在 60 词局部窗口共同出现，防止全文远距离偶然命中；尚未实现语义模型或人工审核流程。</p></div><div class="detail-section"><strong>第二阶段 · 阅读适配</strong><p>${esc(analysis.basis)}</p>${analysis.available?`<p>当前阈值估计：${esc(analysis.difficulty)}；中等句长 ≥${esc($('#medium-sentence').value)}，较难句长 ≥${esc($('#hard-sentence').value)}；长词比例阈值 17% / 27%。词数按英文词及内部撇号/连字符统计。</p>`:''}<p>考研高频词覆盖率：暂无法分析。没有真实、合法可用的真题语料，未设置年份、语料范围或频次表。</p><p>IELTS / TOEFL：分别按其编辑主题分类初筛；尚无考试专用全文适配评分。</p></div><div class="detail-section"><strong>来源与权限</strong><p>${esc(a.rights)}<br>发布日期：${esc(date(a.published_at))}<br>收集日期：${esc(stamp(a.collected_at))}<br>真题采用证据：无；不可标记为真题来源。</p></div>`;$('#detail-dialog').showModal()}
 });
 $('#update').onclick=async()=>{if(busy)return;busy=true;$('#update').disabled=true;$('#update').textContent='正在获取…';$('#statuses').hidden=false;try{state=await api('/api/update',{});syncOptions();render();const good=Object.values(state.statuses).filter(s=>s.state==='成功').length;toast(good?`${good} 个来源成功；其他来源请查看状态。`:'来源获取失败，已有内容已保留。')}catch(e){toast('更新失败：'+e.message+'；已有内容保留。')}finally{busy=false;$('#update').disabled=false;$('#update').textContent='↻ 更新来源'}};
-$('#import-form').onsubmit=async e=>{e.preventDefault();const form=e.target,submit=form.querySelector('[type=submit]');submit.disabled=true;$('#import-error').textContent='';const data=Object.fromEntries(new FormData(form));data.authorized=form.elements.authorized.checked;try{state=await api('/api/import',data);syncOptions();render();form.reset();$('#import-dialog').close();toast('导入成功；筛选理由与分析依据已生成。')}catch(e){$('#import-error').textContent=e.message}finally{submit.disabled=false}};
-$('#export').onclick=()=>{const data={...personal,exported_at:new Date().toISOString()};const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='leaf-reading-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
-$('#backup-file').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>2000000)throw Error('备份超过 2MB 限制');const data=JSON.parse(await file.text());if(data.version!==1||!data.saved||typeof data.saved!=='object'||Array.isArray(data.saved)||!data.history||typeof data.history!=='object'||Array.isArray(data.history))throw Error('备份格式不正确');const saved={...personal.saved},history={...personal.history};for(const [id,a]of Object.entries(data.saved)){if(!a||typeof a.title!=='string'||a.id!==id||typeof a.source!=='string'||typeof a.summary_zh!=='string'||(!a.demo&&!safeURL(a.url)))throw Error('文章记录格式不正确');if(['__proto__','constructor','prototype'].includes(id))throw Error('无效记录 ID');saved[id]=metadata(a)}for(const[id,t]of Object.entries(data.history)){if(!safeURL(id)||typeof t!=='string'||Number.isNaN(Date.parse(t)))throw Error('阅读记录格式不正确');history[id]=t}personal={version:1,saved,history};const ok=persist();syncOptions();render();$('#backup-message').textContent=ok?'恢复成功，已与现有记录合并。':'已恢复到当前会话，但浏览器存储不可用，请导出备份。'}catch(e){$('#backup-message').textContent='恢复失败：'+e.message}finally{e.target.value=''}};
+$('#import-form').onsubmit=e=>{e.preventDefault();const form=e.target;$('#import-error').textContent='';const data=Object.fromEntries(new FormData(form));try{
+ const title=data.title.trim(),url=safeURL(data.url),body=data.body.trim();
+ if(!title||!url)throw Error('请提供标题和有效的 HTTP(S) 原文链接');
+ if(body&&!form.elements.authorized.checked)throw Error('只有确认有权使用完整正文后才能导入');
+ if(new TextEncoder().encode(body).length>500000)throw Error('正文超过 500KB 限制');
+ const article={id:url,title,url,source:data.source.trim()||'手动导入',published_at:data.published_at||null,collected_at:new Date().toISOString(),summary_zh:data.summary_zh.trim()||'手动导入，尚未添加中文简介。',summary_en:data.summary_en.trim(),body,demo:false,browser_only:true,rights:body?'用户声明合法取得完整正文；仅保存在本浏览器，不发送到服务器。':'本地链接与元数据；未获取全文。'};
+ personal.imports[url]=article;const saved=persist();syncOptions();render();form.reset();$('#import-dialog').close();if(saved)toast('已导入到本浏览器；正文不会上传或公开。');
+ }catch(e){$('#import-error').textContent=e.message}};
+
+$('#export').onclick=()=>{const data={version:1,saved:personal.saved,history:personal.history,imports:Object.fromEntries(Object.entries(personal.imports).map(([id,a])=>[id,metadata(a)])),exported_at:new Date().toISOString()};const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='leaf-reading-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('#backup-file').onchange=async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>2000000)throw Error('备份超过 2MB 限制');const data=JSON.parse(await file.text());if(data.version!==1||!data.saved||typeof data.saved!=='object'||Array.isArray(data.saved)||!data.history||typeof data.history!=='object'||Array.isArray(data.history))throw Error('备份格式不正确');const saved={...personal.saved},history={...personal.history};for(const [id,a]of Object.entries(data.saved)){if(!a||typeof a.title!=='string'||a.id!==id||typeof a.source!=='string'||typeof a.summary_zh!=='string'||(!a.demo&&!safeURL(a.url)))throw Error('文章记录格式不正确');if(['__proto__','constructor','prototype'].includes(id))throw Error('无效记录 ID');saved[id]=metadata(a)}for(const[id,t]of Object.entries(data.history)){if(!safeURL(id)||typeof t!=='string'||Number.isNaN(Date.parse(t)))throw Error('阅读记录格式不正确');history[id]=t}const imports={...personal.imports};if(data.imports!==undefined){if(!data.imports||typeof data.imports!=='object'||Array.isArray(data.imports))throw Error('导入文章备份格式不正确');for(const[id,a]of Object.entries(data.imports)){if(!a||a.id!==id||!safeURL(id)||typeof a.title!=='string'||typeof a.source!=='string'||typeof a.summary_zh!=='string')throw Error('导入文章格式不正确');if(!imports[id])imports[id]={...metadata(a),browser_only:true,body:''}}}personal={version:1,saved,history,imports};const ok=persist();syncOptions();render();$('#backup-message').textContent=ok?'恢复成功，已与现有记录合并。':'已恢复到当前会话，但浏览器存储不可用，请导出备份。'}catch(e){$('#backup-message').textContent='恢复失败：'+e.message}finally{e.target.value=''}};
 refresh();
