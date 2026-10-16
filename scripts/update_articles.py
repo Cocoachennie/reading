@@ -104,7 +104,9 @@ def update_catalog(previous, fetcher=fetch, event='local'):
     if succeeded:
         state['last_success'] = now()
         # Bounded public archive. Failed-only updates never prune existing data.
-        state['articles'] = sorted(state['articles'], key=lambda a: a.get('collected_at') or '')[-500:]
+        licensed = [a for a in state['articles'] if permitted_body(a)]
+        metadata = [a for a in state['articles'] if not permitted_body(a)]
+        state['articles'] = licensed + sorted(metadata, key=lambda a: a.get('collected_at') or '')[-max(1,500-len(licensed)):]
     state['generated_at'] = now()
     scheduler = state.setdefault('scheduler', {})
     scheduler.update(configured=True, cron='23 0,12 * * *', timezone='UTC', workflow_url=WORKFLOW_URL)

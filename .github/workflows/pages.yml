@@ -32,8 +32,9 @@ jobs:
       - name: Test collection, analysis, and static build
         run: |
           python -m unittest discover -s tests -v
-          node --check static/app.js
-          node --check static/analysis.js
+          for script in static/*.js scripts/*.cjs; do
+            node --check "$script"
+          done
           node --test tests/*.test.cjs
       - name: Collect public RSS metadata (preserve articles if sources fail)
         run: python scripts/update_articles.py

@@ -80,7 +80,7 @@ class ReadingTests(unittest.TestCase):
      self.assertEqual(len(state['articles']),6)
      with self.assertRaises(urllib.error.HTTPError) as ctx:post('/api/update',{})
      self.assertEqual(ctx.exception.code,429)
-     self.assertEqual(fetch.call_count,3)
+     self.assertEqual(fetch.call_count,len(server.SOURCES))
     with urllib.request.urlopen(base+'/api/articles') as r:
      self.assertNotIn('Private',r.read().decode())
    finally:http.shutdown();http.server_close();thread.join()

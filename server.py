@@ -21,6 +21,9 @@ LAST_UPDATE_ATTEMPT = None
 SOURCES = [
     {'id': 'guardian-science', 'name': 'The Guardian · Science', 'url': 'https://www.theguardian.com/science/rss'},
     {'id': 'guardian-environment', 'name': 'The Guardian · Environment', 'url': 'https://www.theguardian.com/environment/rss'},
+    {'id': 'guardian-business', 'name': 'The Guardian · Business', 'url': 'https://www.theguardian.com/business/rss'},
+    {'id': 'guardian-education', 'name': 'The Guardian · Education', 'url': 'https://www.theguardian.com/education/rss'},
+    {'id': 'guardian-culture', 'name': 'The Guardian · Culture', 'url': 'https://www.theguardian.com/culture/rss'},
     {'id': 'nasa', 'name': 'NASA · News', 'url': 'https://www.nasa.gov/feed/'},
 ]
 # Editorial starter taxonomy; NOT derived from an examination corpus.

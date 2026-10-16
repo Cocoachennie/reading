@@ -16,7 +16,10 @@ jobs:
         with:
           node-version: '24'
       - run: python -m unittest discover -s tests -v
-      - run: node --check static/app.js
-      - run: node --check static/analysis.js
+      - name: Check JavaScript syntax
+        run: |
+          for script in static/*.js scripts/*.cjs; do
+            node --check "$script"
+          done
       - run: node --test tests/*.test.cjs
       - run: python scripts/build_site.py

@@ -3,6 +3,7 @@ import datetime as dt
 import hashlib
 import re
 import subprocess
+import tempfile
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -46,6 +47,8 @@ def extract(xml):
   if tag in excluded:return
   if tag in ('para','title'):
    text=' '.join(''.join(node.itertext()).split())
+   text=re.sub(r'\(\s*\)', '', text)
+   text=re.sub(r'\s+([.,;:!?])', r'\1', ' '.join(text.split()))
    if text:paragraphs.append(text)
    return
   for child in node:walk(child)
@@ -55,7 +58,7 @@ def extract(xml):
  return title,'\n\n'.join(paragraphs)
 def fetch_book(book):
  remote='https://github.com/openstax/'+book['repo']+'.git'
- result=subprocess.run(['git','ls-remote',remote,'HEAD'],capture_output=True,text=True,timeout=25,check=True)
+ result=subprocess.run(['git','ls-remote',remote,'HEAD'],capture_output=True,text=True,timeout=25,check=True,cwd=tempfile.gettempdir())
  revision=result.stdout.split()[0]
  if not re.fullmatch('[0-9a-f]{40}',revision):raise ValueError('无法确定上游版本')
  base=f"https://raw.githubusercontent.com/openstax/{book['repo']}/{revision}/"
