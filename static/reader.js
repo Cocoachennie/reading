@@ -3,7 +3,7 @@
 const M=LeafLearning;let data=M.empty(),locked=false,current=null,selection=null,searchMatches=[],searchIndex=0,lastActivity=Date.now();
 try{const raw=localStorage.getItem(M.KEY);if(raw)data=M.validate(JSON.parse(raw))}catch(e){locked=true;toast('学习存储读取失败，已暂停写入以保护旧数据。请先导出原始备份再恢复。')}
 const el=id=>document.getElementById(id),id=()=>crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2),time=()=>new Date().toISOString();
-function save(){if(locked){toast('旧学习数据读取异常，未覆盖。请先导出原始备份再恢复。');return false}try{M.validate(data);localStorage.setItem(M.KEY,JSON.stringify(data));return true}catch(e){toast('学习数据未写入浏览器：'+e.message+'。请立即导出备份；当前会话数据仍在。');return false}}
+function save(){if(locked){toast('旧学习数据读取异常，未覆盖。请先导出原始备份再恢复。');return false}try{M.validate(data);localStorage.setItem(M.KEY,JSON.stringify(data));document.dispatchEvent(new Event('learning-updated'));return true}catch(e){toast('学习数据未写入浏览器：'+e.message+'。请立即导出备份；当前会话数据仍在。');return false}}
 function record(){if(!current)return null;let r=data.articles[current.id];if(!r)r=data.articles[current.id]={status:current.body?'in_progress':'unread',progress:0,seconds:0,updated_at:time()};return r}
 function snapshot(a){data.snapshots[a.id]={...metadata(a),body:a.body||'',updated_at:time()}}
 function findArticle(key){return articles().find(a=>a.id===key)||data.snapshots[key]&&LeafAnalysis.enrich(data.snapshots[key])}
@@ -21,7 +21,7 @@ function open(a){if(current)saveProgress();current=a;selection=null;searchMatche
  el('reader-search').oninput=()=>{const q=el('reader-search').value.toLowerCase();searchMatches=[];let start=0,at;if(q&&current.body)while((at=current.body.toLowerCase().indexOf(q,start))>=0){searchMatches.push({start:at,end:at+q.length});start=at+q.length;if(searchMatches.length>=200)break}searchIndex=0;el('reader-search-count').textContent=searchMatches.length+' 处'+(searchMatches.length===200?'（最多展示200处）':'');renderBody()};el('reader-search-next').onclick=()=>{if(!searchMatches.length)return;el('reader-body').querySelector(`[data-match="${searchIndex}"]`)?.scrollIntoView({behavior:'smooth',block:'center'});searchIndex=(searchIndex+1)%searchMatches.length};
  renderBody();renderAnnotations();window.scrollTo(0,0);lastActivity=Date.now();
  if(el('reader-body')){el('reader-body').addEventListener('mouseup',captureSelection);el('reader-body').addEventListener('touchend',()=>setTimeout(captureSelection,100));el('reader-body').addEventListener('keyup',captureSelection);el('reader-body').addEventListener('click',clickWord)}
- el('annotation-list').onclick=annotationClick;
+ el('annotation-list').onclick=annotationClick;document.dispatchEvent(new Event('reader-open'));
 }
 function updateProgressUI(){if(!current||!el('reading-progress'))return;const r=record();el('reading-progress').value=r.progress;el('reading-progress-text').textContent=Math.round(r.progress*100)+'% · '+Math.floor(r.seconds/60)+' 分钟'}
 function saveProgress(){if(!current||el('reader-page').hidden)return;const body=el('reader-body'),r=record();if(body&&r.status!=='completed'){const top=body.getBoundingClientRect().top+scrollY;const travel=Math.max(1,body.offsetHeight-innerHeight*.7);const progress=Math.min(1,Math.max(0,(scrollY-top+90)/travel));r.progress=Math.max(r.progress,progress)}r.updated_at=time();save();updateProgressUI()}
@@ -41,6 +41,6 @@ for(const event of ['pointerdown','keydown','touchstart','wheel'])document.addEv
 let lastTick=Date.now();setInterval(()=>{const now=Date.now(),elapsed=Math.min(10,(now-lastTick)/1000);lastTick=now;if(current?.body&&!el('reader-page').hidden&&document.visibilityState==='visible'&&document.hasFocus()&&now-lastActivity<90000){record().seconds+=elapsed;saveProgress()}},5000);
 let scrollTimer;window.addEventListener('scroll',()=>{lastActivity=Date.now();clearTimeout(scrollTimer);scrollTimer=setTimeout(saveProgress,350)},{passive:true});
 window.addEventListener('pagehide',saveProgress);document.addEventListener('visibilitychange',saveProgress);window.addEventListener('hashchange',route);document.addEventListener('catalog-ready',route);
-document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{if(location.hash.startsWith('#article='))location.hash=''}));
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{if(b.id!=='learning-nav'&&(location.hash.startsWith('#article=')||location.hash.startsWith('#learning')))location.hash=''}));
 route();
 })();

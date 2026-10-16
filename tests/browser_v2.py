@@ -28,8 +28,21 @@ def run():
     page.locator('#reader-search').fill('research');assert page.locator('#reader-body .search-hit').count()>0
     page.locator('#note-search').fill('Edited');assert page.locator('.annotation').count()==1;page.locator('[data-jump]').click();page.locator('#note-search').fill('');page.locator('#reader-search').fill('')
     page.locator('#reading-status').select_option('completed');page.reload();page.wait_for_selector('#reader-body');expect(page.locator('#reading-status')).to_have_value('completed')
+    select(0,10);page.locator('#selection-dictionary').click();expect(page.locator('#dictionary-result')).to_contain_text('科学的')
+    page.route('https://api.dictionaryapi.dev/**',lambda route:route.fulfill(status=503,body='offline dictionary fixture'))
+    page.locator('#dictionary-fetch').click();expect(page.locator('#dictionary-status')).to_contain_text('词典查询失败')
+    page.locator('#dictionary-add').click();expect(page.locator('#word-lemma')).to_have_value('scientific');page.locator('#word-phonetic').fill('/manual-test/');page.locator('#word-form [type="submit"]').click()
+    page.locator('#learning-nav').click();expect(page.locator('#learning-page')).to_be_visible();page.locator('[data-study-tab="words"]').click();expect(page.locator('#study-content')).to_contain_text('scientific');expect(page.locator('#study-content')).to_contain_text('科学的')
+    page.locator('#review-open').click();page.locator('#review-begin').click();expect(page.locator('#quiz-question')).to_have_text('scientific');page.locator('#quiz-answer').fill('科学的');page.locator('#quiz-reveal').click();page.locator('[data-grade="5"]').click();expect(page.locator('#quiz-card')).to_contain_text('本轮复习完成');page.locator('#review-close').click()
+    page.locator('#review-open').click();page.locator('#review-direction').select_option('zh-en');page.locator('#review-due-only').uncheck();page.locator('#review-begin').click();expect(page.locator('#quiz-question')).to_have_text('科学的');page.locator('#quiz-answer').fill('scientific');page.locator('#quiz-reveal').click();page.locator('[data-grade="3"]').click();page.locator('#review-close').click()
+    page.locator('[data-study-tab="reviews"]').click();expect(page.locator('#study-content')).to_contain_text('英译中');expect(page.locator('#study-content')).to_contain_text('中译英')
+    page.locator('[data-study-tab="words"]').click();page.locator('[data-word-edit]').click();page.locator('#word-meaning').fill('科学的；经验证的（测试笔记）');page.locator('#word-form [type="submit"]').click();page.reload();page.wait_for_selector('.vocab-card');expect(page.locator('#study-content')).to_contain_text('经验证的')
+    with page.expect_download() as download:
+     page.locator('#word-export').click()
+    vocab=target/'words.csv';download.value.save_as(vocab);assert 'scientific' in vocab.read_text(encoding='utf-8-sig')
+    page.locator('[data-study-tab="notes"]').click();expect(page.locator('#study-content')).to_contain_text('Edited and persisted');page.locator('[data-study-note]').click();page.wait_for_selector('#reader-body');expect(page.locator('#annotation-list')).to_contain_text('Edited and persisted')
     page.set_viewport_size({'width':390,'height':844});page.locator('#reader-font').select_option('22');assert page.locator('#reader-body').evaluate('(e)=>getComputedStyle(e).fontSize')=='22px';assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     assert not errors,errors
-    browser.close();print('PASS V2 phase 2: distinct exam lists; licensed in-site reader; typography; anchored highlights; note create/edit/search/location; refresh persistence; reading status; mobile width; no JS errors.')
+    browser.close();print('PASS V2 phase 3: distinct exam lists; licensed in-site reader; typography; anchored highlights; note create/edit/search/location; refresh persistence; reading status; mobile width; no JS errors.')
   finally:http.shutdown();http.server_close();thread.join()
 if __name__=='__main__':run()
