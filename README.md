@@ -81,7 +81,7 @@ GitHub Actions 保持每天北京时间 **08:23 / 20:23**（UTC `23 0,12 * * *`�
 
 首次创建 Pages 如仍 403，可按官方限制使用可选的仓库 secret `PAGES_ENABLEMENT_TOKEN`（fine-grained PAT 仅授权本仓库、Pages 读写）。不要放聊天或代码；初始化后可移除，后续自动回退到内置 Token。若机器人提交公共目录被 main 保护规则阻止，需仓库管理员调整策略或另设数据分支，不能强制推送绕过。
 
-当前云会话不能确认真实线上部署状态（此前 GitHub API/Pages 验证通道返回代理 403）。本机测试与提交成功不等于已验证线上发布；以 Actions 的实际结果为准。
+V2 第四阶段发布的 [GitHub Actions 运行 #38857236368](https://github.com/Cocoachennie/reading/actions/runs/38857236368) 已从 GitHub 运行页核实为 Success，对应提交 `b2644d0`。当前云环境直接请求 Pages 地址仍被代理 403 阻止，尚不能验收公网页面内容；后续发布以最新 Actions 结果为准。更新后可刷新页面，不要通过清除网站数据来更新，以免删除本地学习记录。
 
 ## 开发与复现
 
