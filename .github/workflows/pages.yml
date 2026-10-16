@@ -46,6 +46,7 @@ jobs:
         run: python scripts/build_site.py
       - uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages
           path: _site
 
   deploy:
@@ -53,13 +54,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/configure-pages@v5
+      - name: Configure or initialize GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+          # Normal deployments use the built-in token. First-time site creation
+          # may require an owner-provided token with Pages write permission.
+          token: ${{ secrets.PAGES_ENABLEMENT_TOKEN || github.token }}
       - name: Publish to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages

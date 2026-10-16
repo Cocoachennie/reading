@@ -82,7 +82,9 @@ python -m http.server 8000 --directory _site
 
 - **找不到 Run workflow**：先确认工作流文件已在默认分支 `main`，且 Actions 已允许运行。
 - **build 在机器人 git push 步骤失败**：查看仓库 **Settings → Actions → General → Workflow permissions** 及组织策略，确认允许该工作流写入仓库。若 `main` 有保护规则，也须允许相应机器人更新，或后续改用专门数据分支；不要使用强制推送绕过。
-- **deploy 提示 Pages 未启用**：回到 Settings → Pages，把 Source 设置为 GitHub Actions，再手动重跑工作流。
+- **configure-pages 报 `Get Pages site failed` / 404**：工作流已设置 `enablement: true`，会先读取站点，站点不存在时尝试创建 workflow 类型的 Pages。`deploy` 显式具备 `contents: read`、`pages: write`、`id-token: write`。上传产物名与部署读取名均固定为 `github-pages`；官方 `deploy-pages` 会自行下载该产物，不需要额外 `download-artifact`。
+- **重新触发修复版部署**：打开 Actions → Update articles and deploy Pages → Run workflow，选择 `main`，再点击 Run workflow。不要只对旧失败记录点 Re-run jobs，那可能继续使用旧版本工作流。此次修复提交推送到 `main` 也会自动触发一次。
+- **启用参数后仍出现 `Create Pages site failed` / 403**：这与原来的“未尝试创建”不同。[configure-pages 官方参数说明](https://github.com/actions/configure-pages/blob/v5/action.yml)明确指出，首次创建站点需要默认 `GITHUB_TOKEN` 之外的凭据；仅增加工作流权限并不能保证初始化成功。仓库所有者可先在 Settings → Pages 确认 GitHub Actions 配置已保存、站点已真正启用，然后重跑。若 UI 仍无法初始化，可在 GitHub 创建仅授权本仓库、具有 **Pages: Read and write** 权限的短期 fine-grained PAT，并在仓库 Settings → Secrets and variables → Actions → New repository secret 中命名为 `PAGES_ENABLEMENT_TOKEN`。工作流已支持该可选 secret，不需修改代码；不要把 Token 发在聊天、提交进代码或写入日志。初始化完成后可删除该 secret，后续部署自动回退到内置 Token。GitHub App 凭据还需相应的 `administration:write` 和 `pages:write` 权限；组织策略或站点政策限制须由管理员处理。
 - **网站 404**：等 `deploy` 成功，确认地址包含 `/reading/`；自定义域名以 Pages 设置为准。
 - **页面有文章但未变新**：查看来源状态和 Actions 日志；页面刷新与源站采集是两步。计划任务被停用时，在 Actions 中重新启用并手动运行一次。
 
