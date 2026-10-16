@@ -4,7 +4,7 @@
 const VERSION='2.0.0';
 const TOPICS={
  '社会':['society','social','community','inequality','employment','workers'],
- '经济':['economy','economic','market','trade','inflation','scarcity','consumers','production'],
+ '经济':['economy','economic','economics','microeconomics','macroeconomics','market','trade','inflation','scarcity','consumers','production'],
  '政策':['policy','government','politics','democracy','regulation','election'],
  '文化':['culture','cultural','literature','language','tradition','identity'],
  '科技':['technology','artificial intelligence','digital','algorithm','automation','software'],
@@ -34,8 +34,11 @@ function lemma(raw){const word=String(raw).toLowerCase().replace(/^[^a-z]+|[^a-z
 function topicMatch(text,min=2){const words=String(text).toLowerCase().split(/\s+/),windows=[];for(let i=0;i<Math.max(1,words.length);i+=30)windows.push(words.slice(i,i+60).join(' '));const hits={};for(const [topic,terms]of Object.entries(TOPICS)){let best=[];for(const w of windows){const found=terms.filter(t=>new RegExp('\\b'+escape(t)+'\\b','i').test(w));if(found.length>best.length)best=found}if(best.length>=min)hits[topic]=best}return hits}
 function analyze(article,settings={}){
  const body=typeof article.body==='string'?article.body.trim():'';
- const hits=topicMatch([article.title,article.summary_en,body].join(' '),settings.minCues||2),topics=Object.keys(hits);
- const result={version:VERSION,status:body?'insufficient_text':'metadata_only',available:false,words:body?tokens(body).length:null,cefr:null,difficulty:null,reading_minutes:null,long_sentences:null,keywords:[],core_vocabulary:[],academic_vocabulary:[],coverage:null,topic_hits:hits,topics,basis:'未取得允许站内使用的正文；不使用标题或摘要计算全文指标。'};
+ const context=[article.title,article.summary_en,body].join(' '),hits=topicMatch(context,settings.minCues||2);
+ const evidence={};for(const topic of Object.keys(hits))evidence[topic]=TOPICS[topic].reduce((sum,term)=>sum+(context.match(new RegExp('\\b'+escape(term)+'\\b','gi'))||[]).length,0);
+ const strongest=Math.max(1,...Object.values(evidence)),strengths=Object.fromEntries(Object.entries(evidence).map(([k,v])=>[k,v/strongest]));
+ const topics=Object.keys(hits).filter(t=>strengths[t]>=.22);
+ const result={version:VERSION,status:body?'insufficient_text':'metadata_only',available:false,words:body?tokens(body).length:null,cefr:null,difficulty:null,reading_minutes:null,long_sentences:null,keywords:[],core_vocabulary:[],academic_vocabulary:[],coverage:null,topic_hits:hits,topic_strengths:strengths,topics,basis:'未取得允许站内使用的正文；不使用标题或摘要计算全文指标。'};
  if(!body)return result;
  const ws=tokens(body),ss=sentences(body),freq=new Map();for(const w of ws){const key=lemma(w);if(key.length>2&&!STOP.has(key))freq.set(key,(freq.get(key)||0)+1)}
  const ranked=[...freq].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
@@ -54,8 +57,8 @@ function analyze(article,settings={}){
  result.basis=`CEFR 启发式参考，未经标准化测评校准：词汇形态复杂度 40%、句长/从属线索 35%、篇幅 10%、主题抽象度 15%。平均句长 ${avg.toFixed(1)} 词，≥8 字母词 ${(long*100).toFixed(1)}%，长难句 ${result.long_sentences}（规则估计）。分数阈值 .33/.50/.70。词数基于所展示正文；阅读时间按 ${settings.wpm||180} 词/分钟估计。学术词为编辑小词表，不是完整 AWL 或考研词频。`;
  return result;
 }
-function recommend(analysis){const all={};for(const [exam,p]of Object.entries(PROFILES)){const matched=analysis.topics.filter(t=>p.weights[t]);const max=Math.max(0,...matched.map(t=>p.weights[t]));const theme=Math.min(50,Math.round(max/5*40+Math.min(matched.length,3)*3));const w=analysis.words;const length=w===null?null:w>=p.length[0]&&w<=p.length[1]?20:Math.round(20*Math.max(0,1-Math.min(Math.abs(w-p.length[0]),Math.abs(w-p.length[1]))/(p.length[1]*1.5)));const language=analysis.cefr?p.levels[analysis.cefr]:null;const complete=analysis.available;const score=complete?theme+language+length:null;
- all[exam]={score,topic_score:theme,language_score:complete?language:null,length_score:complete?length:null,provisional:!complete,eligible:complete?theme>=25&&score>=55:theme>=25,matched_topics:matched,reason:`${exam}：${p.focus}。主题 ${theme}/50（${matched.join('、')||'尚无充分主题线索'}）；建议篇幅 ${p.length.join('–')} 词。`+(complete?`语言 ${language}/30（估计 ${analysis.cefr}），篇幅 ${length}/20；总分 ${score}/100。${w>p.length[1]?'篇幅较长，建议分段精读。':''}`:'未取得可分析正文，只有主题预评分，完整适配分暂不可计算。')+'不是官方评分，也不证明被真题采用。'};
+function recommend(analysis){const all={};for(const [exam,p]of Object.entries(PROFILES)){const matched=analysis.topics.filter(t=>p.weights[t]);const max=Math.max(0,...matched.map(t=>p.weights[t]*(analysis.topic_strengths?.[t]??1)));const theme=Math.min(50,Math.round(max/5*40+Math.min(matched.length,3)*3));const w=analysis.words;const length=w===null?null:w>=p.length[0]&&w<=p.length[1]?20:Math.round(20*Math.max(0,1-Math.min(Math.abs(w-p.length[0]),Math.abs(w-p.length[1]))/(p.length[1]*1.5)));const language=analysis.cefr?p.levels[analysis.cefr]:null;const complete=analysis.available;const score=complete?theme+language+length:null;
+ all[exam]={score,topic_score:theme,language_score:complete?language:null,length_score:complete?length:null,provisional:!complete,eligible:complete?theme>=25&&score>=55:theme>=25,matched_topics:matched,reason:`${exam}：${p.focus}。主题 ${theme}/50（按正文主题线索相对密度加权，${matched.join('、')||'尚无充分主题线索'}）；建议篇幅 ${p.length.join('–')} 词。`+(complete?`语言 ${language}/30（估计 ${analysis.cefr}），篇幅 ${length}/20；总分 ${score}/100。${w>p.length[1]?'篇幅较长，建议分段精读。':''}`:'未取得可分析正文，只有主题预评分，完整适配分暂不可计算。')+'不是官方评分，也不证明被真题采用。'};
  }return all}
 function enrich(article,settings){const analysis=analyze(article,settings),exam_scores=recommend(analysis);return {...article,analysis,topics:analysis.topics,exam_scores,recommendations:Object.entries(exam_scores).filter(([,s])=>s.eligible).map(([exam,s])=>({exam,reason:s.reason}))}}
 return {VERSION,TOPICS,PROFILES,GLOSSARY,tokens,sentences,lemma,topicMatch,analyze,recommend,enrich};

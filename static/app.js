@@ -50,7 +50,7 @@ function render(){
  $('#result-count').textContent=`${filtered.length} 篇文章 · ${live} 篇非演示${view==='all'?' · '+exam:''}`;
  $('#notice').textContent='V2.0 · 默认仅显示真实来源或你的本地导入。三个考试独立评分；仅元数据候选不计算全文难度。数量不足时如实显示，可勾选全部文章查看待分析条目。';
  $('#empty').hidden=filtered.length>0;
- $('#articles').innerHTML=filtered.map(a=>{const r=a.recommendations.find(r=>r.exam===exam)||a.recommendations[0];return `<article class="article-card"><div class="card-top"><span class="source-name">${esc(a.source)}</span>${a.demo?'<span class="demo-label">虚构演示</span>':`<time>${esc(date(a.published_at))}</time>`}</div><h3><button class="title-button" data-open="${esc(a.id)}">${esc(a.title)}</button></h3><p class="intro">${esc(a.summary_zh)}</p><div class="tags">${a.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}${a.recommendations.map(r=>`<span class="tag exam">${esc(r.exam)}</span>`).join('')}${!a.topics.length?'<span class="tag">主题待复核</span>':''}</div><div class="metrics"><span>${a.analysis.words!==null?a.analysis.words+' words':'词数 · 暂无法分析'}</span><span>${a.analysis.cefr?'CEFR 参考 · '+a.analysis.cefr:'难度 · 暂无法分析'}</span><span>${a.analysis.reading_minutes?'约 '+a.analysis.reading_minutes+' 分钟':''}</span></div><p class="recommendation">${a.exam_scores[exam]?.score!=null?'适配 '+a.exam_scores[exam].score+'/100':a.exam_scores[exam]?.eligible?'仅主题预评分 '+a.exam_scores[exam].topic_score+'/50':'暂无该考试推荐'} · ${esc(a.topics.join(' / ')||'主题待复核')}${view==='history'?'<br>打开原文：'+esc(stamp(personal.history[a.id])):''}</p><button class="reason" data-reason="${esc(a.id)}">筛选理由与分析依据 ↗</button><div class="card-actions"><button class="original text-button" data-open="${esc(a.id)}">${a.body?'开始精读 ↗':'查看详情 ↗'}</button>${safeURL(a.url)&&!a.demo?`<a class="original" href="${esc(safeURL(a.url))}" target="_blank" rel="noopener noreferrer" data-read="${esc(a.id)}">Read Original 阅读原文 ↗</a>`:'<span class="original disabled">演示文章 · 无原文链接</span>'}<button class="save ${personal.saved[a.id]?'selected':''}" data-save="${esc(a.id)}" aria-pressed="${!!personal.saved[a.id]}">${personal.saved[a.id]?'◆ 已收藏':'◇ Save 收藏'}</button></div></article>`}).join('');
+ $('#articles').innerHTML=filtered.map(a=>{const r=a.recommendations.find(r=>r.exam===exam)||a.recommendations[0];return `<article class="article-card" data-article="${esc(a.id)}"><div class="card-top"><span class="source-name">${esc(a.source)}</span>${a.demo?'<span class="demo-label">虚构演示</span>':`<time>${esc(date(a.published_at))}</time>`}</div><h3><button class="title-button" data-open="${esc(a.id)}">${esc(a.title)}</button></h3><p class="intro">${esc(a.summary_zh)}</p><div class="tags">${a.topics.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}${a.recommendations.map(r=>`<span class="tag exam">${esc(r.exam)}</span>`).join('')}${!a.topics.length?'<span class="tag">主题待复核</span>':''}</div><div class="metrics"><span>${a.analysis.words!==null?a.analysis.words+' words':'词数 · 暂无法分析'}</span><span>${a.analysis.cefr?'CEFR 参考 · '+a.analysis.cefr:'难度 · 暂无法分析'}</span><span>${a.analysis.reading_minutes?'约 '+a.analysis.reading_minutes+' 分钟':''}</span></div><p class="recommendation">${a.exam_scores[exam]?.score!=null?'适配 '+a.exam_scores[exam].score+'/100':a.exam_scores[exam]?.eligible?'仅主题预评分 '+a.exam_scores[exam].topic_score+'/50':'暂无该考试推荐'} · ${esc(a.topics.join(' / ')||'主题待复核')}${view==='history'?'<br>打开原文：'+esc(stamp(personal.history[a.id])):''}</p><button class="reason" data-reason="${esc(a.id)}">筛选理由与分析依据 ↗</button><div class="card-actions"><button class="original text-button" data-open="${esc(a.id)}">${a.body?'开始精读 ↗':'查看详情 ↗'}</button>${safeURL(a.url)&&!a.demo?`<a class="original" href="${esc(safeURL(a.url))}" target="_blank" rel="noopener noreferrer" data-read="${esc(a.id)}">Read Original 阅读原文 ↗</a>`:'<span class="original disabled">演示文章 · 无原文链接</span>'}<button class="save ${personal.saved[a.id]?'selected':''}" data-save="${esc(a.id)}" aria-pressed="${!!personal.saved[a.id]}">${personal.saved[a.id]?'◆ 已收藏':'◇ Save 收藏'}</button></div></article>`}).join('');
 }
 function validateCatalog(data){
  if(!data||data.schema_version!==1||!Array.isArray(data.articles)||!data.statuses||!data.topic_rules||!data.exam_rules)throw Error('文章数据格式不正确');
@@ -64,7 +64,7 @@ async function refresh(){
  try{
   const url=new URL(DATA_URL);url.searchParams.set('v',Date.now());
   const response=await fetch(url,{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
-  const next=validateCatalog(await response.json());state=next;syncOptions();render();
+  const next=validateCatalog(await response.json());state=next;syncOptions();render();document.dispatchEvent(new Event('catalog-ready'));
   try{localStorage.setItem('leaf-catalog',JSON.stringify(next))}catch{/* Personal reading data takes priority over the optional public catalog cache. */}
   return true;
  }catch(e){syncOptions();render();$('#notice').textContent='无法读取最新文章数据：'+e.message+'。已有文章、本地导入和收藏已保留；稍后可重试刷新。';return false}
@@ -78,10 +78,11 @@ for(const [button,dialog]of [['import-open','import-dialog'],['backup-open','bac
 $$('[data-close]').forEach(b=>b.onclick=()=>$('#'+b.dataset.close).close());
 $('#reset').onclick=()=>{$$('.filters input,.filters select').forEach(e=>e.value='');$('#demo-toggle').checked=false;render()};
 $('#articles').addEventListener('click',e=>{
- const b=e.target.closest('[data-save],[data-reason],[data-read],[data-open]');if(!b)return;const id=b.dataset.save||b.dataset.reason||b.dataset.read||b.dataset.open;const a=articles().find(a=>a.id===id);if(!a)return;
+ const b=e.target.closest('[data-save],[data-reason],[data-read],[data-open]');if(!b){const card=e.target.closest('[data-article]');if(card&&!window.getSelection()?.toString())LeafReader.openArticle(card.dataset.article);return;}const id=b.dataset.save||b.dataset.reason||b.dataset.read||b.dataset.open;const a=articles().find(a=>a.id===id);if(!a)return;
  if(b.dataset.save){if(personal.saved[id])delete personal.saved[id];else personal.saved[id]=metadata(a);persist();render()}
  if(b.dataset.read){personal.history[id]=new Date().toISOString();persist();if(view==='history')render()}
- if(b.dataset.reason||b.dataset.open){showAnalysis(a)}
+ if(b.dataset.reason)showAnalysis(a);
+ if(b.dataset.open)LeafReader.openArticle(a.id);
 
 });
 function showAnalysis(a){

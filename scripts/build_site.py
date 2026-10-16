@@ -11,7 +11,7 @@ from scripts.update_articles import validate_catalog
 
 def build(destination=ROOT / '_site'):
     source = ROOT / 'static'
-    for required in ('index.html', 'app.js', 'analysis.js', 'style.css', 'favicon.svg', 'data/articles.json'):
+    for required in ('index.html', 'app.js', 'analysis.js', 'learning.js', 'reader.js', 'style.css', 'favicon.svg', 'data/articles.json'):
         if not (source / required).is_file():
             raise ValueError(f'缺少静态文件：{required}')
     if any(p.is_symlink() for p in source.rglob('*')):
