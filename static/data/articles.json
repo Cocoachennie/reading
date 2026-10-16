@@ -1,0 +1,1817 @@
+{
+  "schema_version": 1,
+  "articles": [
+    {
+      "id": "demo-0",
+      "title": "Could artificial intelligence change the way we learn?",
+      "summary_en": "education school student learning teacher artificial intelligence technology",
+      "summary_zh": "当人工智能进入课堂，我们如何重新理解学习？",
+      "source": "The Guardian",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985245+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "科技",
+        "教育"
+      ],
+      "recommendations": [
+        {
+          "exam": "考研英语",
+          "reason": "主题初筛：科技、教育；同一主题在局部语境共同命中多个线索（technology / artificial intelligence / education / school / student）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "IELTS",
+          "reason": "主题初筛：科技、教育；同一主题在局部语境共同命中多个线索（technology / artificial intelligence / education / school / student）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：教育；同一主题在局部语境共同命中多个线索（education / school / student / learning / teacher）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "demo-1",
+      "title": "The quiet work of restoring a living forest",
+      "summary_en": "climate environment biodiversity ecosystem conservation",
+      "summary_zh": "从森林修复看生态保护与气候变化的关联。",
+      "source": "The Guardian",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985262+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "环境"
+      ],
+      "recommendations": [
+        {
+          "exam": "考研英语",
+          "reason": "主题初筛：环境；同一主题在局部语境共同命中多个线索（climate / environment / biodiversity / ecosystem / conservation）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "IELTS",
+          "reason": "主题初筛：环境；同一主题在局部语境共同命中多个线索（climate / environment / biodiversity / ecosystem / conservation）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：环境；同一主题在局部语境共同命中多个线索（climate / environment / biodiversity / ecosystem / conservation）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "demo-2",
+      "title": "What distant planets can tell us about our own world",
+      "summary_en": "science research scientist space planet astronomy",
+      "summary_zh": "探索行星研究与科学论证，练习学术阅读视角。",
+      "source": "NASA",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985266+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "科学"
+      ],
+      "recommendations": [
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：科学；同一主题在局部语境共同命中多个线索（science / research / scientist / space / planet）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "demo-3",
+      "title": "Why the future of work is also a question of education",
+      "summary_en": "economy economic employment education university learning",
+      "summary_zh": "工作、教育与经济变化之间，有哪些值得讨论的联系？",
+      "source": "The Economist",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985269+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "教育",
+        "经济"
+      ],
+      "recommendations": [
+        {
+          "exam": "考研英语",
+          "reason": "主题初筛：教育、经济；同一主题在局部语境共同命中多个线索（education / university / learning / economy / economic）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "IELTS",
+          "reason": "主题初筛：教育；同一主题在局部语境共同命中多个线索（education / university / learning）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：教育；同一主题在局部语境共同命中多个线索（education / university / learning）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "demo-4",
+      "title": "Reading the past through ancient cities",
+      "summary_en": "history historical ancient archaeology culture civilization",
+      "summary_zh": "以古代城市为切入点，理解历史与文化研究。",
+      "source": "演示编辑部",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985270+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "历史与文化"
+      ],
+      "recommendations": [
+        {
+          "exam": "IELTS",
+          "reason": "主题初筛：历史与文化；同一主题在局部语境共同命中多个线索（history / historical / ancient / archaeology / culture）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：历史与文化；同一主题在局部语境共同命中多个线索（history / historical / ancient / archaeology / culture）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "demo-5",
+      "title": "How communities respond to a changing climate",
+      "summary_en": "climate environment carbon politics policy community society",
+      "summary_zh": "观察社区行动与公共政策如何回应气候议题。",
+      "source": "演示编辑部",
+      "url": "",
+      "published_at": null,
+      "collected_at": "2026-10-16T04:43:45.985273+00:00",
+      "demo": true,
+      "rights": "演示元数据；标题及简介为虚构示例，并非该来源实际发布内容。",
+      "body": "",
+      "topics": [
+        "环境",
+        "政治与社会"
+      ],
+      "recommendations": [
+        {
+          "exam": "考研英语",
+          "reason": "主题初筛：环境、政治与社会；同一主题在局部语境共同命中多个线索（climate / environment / carbon / politics / policy）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "IELTS",
+          "reason": "主题初筛：环境；同一主题在局部语境共同命中多个线索（climate / environment / carbon）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        },
+        {
+          "exam": "TOEFL",
+          "reason": "主题初筛：环境；同一主题在局部语境共同命中多个线索（climate / environment / carbon）。需人工核对论述语境；不代表考试选用或全文难度适配。"
+        }
+      ],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+      "title": "How an accelerating Earth led experts to adopt the leap hour",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/15/times-up-for-the-leap-second-as-scientists-swap-it-for-the-leap-hour",
+      "published_at": "2026-10-15T16:16:10+00:00",
+      "collected_at": "2026-10-16T04:43:46.267007+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/video/2026/oct/15/is-your-boss-watching-you-the-rise-of-ai-surveillance-at-work-video",
+      "title": "Is your boss watching you? The rise of AI surveillance at work - video",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/video/2026/oct/15/is-your-boss-watching-you-the-rise-of-ai-surveillance-at-work-video",
+      "published_at": "2026-10-15T11:10:25+00:00",
+      "collected_at": "2026-10-16T04:43:46.267053+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/technology/2026/oct/14/could-ai-change-the-stakes-in-the-development-of-bioweapons",
+      "title": "Could AI ‘change the stakes’ in the development of bioweapons?",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/could-ai-change-the-stakes-in-the-development-of-bioweapons",
+      "published_at": "2026-10-14T17:34:14+00:00",
+      "collected_at": "2026-10-16T04:43:46.267141+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/14/focus-on-sounds-to-help-learn-a-language-study-suggests",
+      "title": "Stop making sense: focus on sounds to help learn a language, study suggests",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/14/focus-on-sounds-to-help-learn-a-language-study-suggests",
+      "published_at": "2026-10-13T23:01:37+00:00",
+      "collected_at": "2026-10-16T04:43:46.267165+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/15/cyril-hilsum-obituary",
+      "title": "Cyril Hilsum obituary",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/15/cyril-hilsum-obituary",
+      "published_at": "2026-10-15T10:53:34+00:00",
+      "collected_at": "2026-10-16T04:43:46.267183+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
+      "title": "Trill seekers: can scientists use AI and tutors to help birds remember lost songs?",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/environment/2026/oct/13/ornithology-trill-why-birds-sing-birdsong-dialects-tutors-ai-aoe",
+      "published_at": "2026-10-13T09:00:19+00:00",
+      "collected_at": "2026-10-16T04:43:46.267203+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/uk-news/2026/oct/12/mythical-roman-fort-frenni-fawr-wales-emperor",
+      "title": "Roman fort found in Wales could prove myth of emperor’s camp is real",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/uk-news/2026/oct/12/mythical-roman-fort-frenni-fawr-wales-emperor",
+      "published_at": "2026-10-12T07:00:48+00:00",
+      "collected_at": "2026-10-16T04:43:46.267226+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "title": "Neanderthal remains may be earliest human ancestor find killed by a spear",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/15/neanderthal-remains-human-ancestor-killed-by-spear-iraq-kurdistan-cave-earliest-find",
+      "published_at": "2026-10-15T15:00:23+00:00",
+      "collected_at": "2026-10-16T04:43:46.267243+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/society/2026/oct/13/women-autoimmune-conditions-psychological-misdiagnosis-cambridge-study",
+      "title": "Women ‘more likely to be told autoimmune conditions are psychological’",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/society/2026/oct/13/women-autoimmune-conditions-psychological-misdiagnosis-cambridge-study",
+      "published_at": "2026-10-13T04:00:14+00:00",
+      "collected_at": "2026-10-16T04:43:46.267260+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/society/2026/oct/08/covid-brexit-liz-truss-mini-budget-lasting-decline-mental-health-uk-study",
+      "title": "Covid, Brexit and Liz Truss mini-budget led to lasting decline in mental health, study finds",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/society/2026/oct/08/covid-brexit-liz-truss-mini-budget-lasting-decline-mental-health-uk-study",
+      "published_at": "2026-10-08T09:00:16+00:00",
+      "collected_at": "2026-10-16T04:43:46.267278+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/society/2026/oct/08/teenager-first-person-testicular-tissue-transplant-uk-cancer-chemotherapy-fertility",
+      "title": "Teenager becomes first person to have testicular tissue transplant in UK",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/society/2026/oct/08/teenager-first-person-testicular-tissue-transplant-uk-cancer-chemotherapy-fertility",
+      "published_at": "2026-10-08T04:00:10+00:00",
+      "collected_at": "2026-10-16T04:43:46.267295+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/oct/09/rise-cancer-young-people-mystery-early-onset",
+      "title": "You have a higher chance of getting cancer at a younger age than your parents. So what went wrong? | Devi Sridhar",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/09/rise-cancer-young-people-mystery-early-onset",
+      "published_at": "2026-10-09T07:00:42+00:00",
+      "collected_at": "2026-10-16T04:43:46.267318+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/oct/09/gordon-brown-british-households-5000-richer-innovation",
+      "title": "British households would be £5,000 richer if we were more innovative. Let’s unleash our talents | Gordon Brown",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/09/gordon-brown-british-households-5000-richer-innovation",
+      "published_at": "2026-10-09T05:00:39+00:00",
+      "collected_at": "2026-10-16T04:43:46.267338+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/sep/30/humans-or-ai-bots-uk-civil-service",
+      "title": "Things are changing behind the scenes, so you must decide: do you want human civil servants or AI bots? | The civil servant",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/30/humans-or-ai-bots-uk-civil-service",
+      "published_at": "2026-09-30T11:00:38+00:00",
+      "collected_at": "2026-10-16T04:43:46.267358+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/sep/20/the-guardian-view-on-ai-v-mathematicians-humans-are-still-vital-to-the-field-but-tech-firms-refuse-to-see-that",
+      "title": "The Guardian view on AI v mathematicians: humans are still vital to the field, but tech firms refuse to see that | Editorial",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/20/the-guardian-view-on-ai-v-mathematicians-humans-are-still-vital-to-the-field-but-tech-firms-refuse-to-see-that",
+      "published_at": "2026-09-20T16:58:03+00:00",
+      "collected_at": "2026-10-16T04:43:46.267378+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/audio/2026/oct/15/is-your-boss-watching-you-the-rise-of-ai-surveillance-at-work-podcast",
+      "title": "Is your boss watching you? The rise of AI surveillance at work – podcast",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/audio/2026/oct/15/is-your-boss-watching-you-the-rise-of-ai-surveillance-at-work-podcast",
+      "published_at": "2026-10-15T04:00:21+00:00",
+      "collected_at": "2026-10-16T04:43:46.267395+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/audio/2026/oct/13/surprising-psychology-morbid-curiosity-podcast",
+      "title": "The surprising psychology of morbid curiosity – podcast",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/audio/2026/oct/13/surprising-psychology-morbid-curiosity-podcast",
+      "published_at": "2026-10-13T04:00:13+00:00",
+      "collected_at": "2026-10-16T04:43:46.267410+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/audio/2026/oct/07/all-the-news-and-science-from-the-2026-nobel-prizes-podcast",
+      "title": "All the news and science from the 2026 Nobel prizes – podcast",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/audio/2026/oct/07/all-the-news-and-science-from-the-2026-nobel-prizes-podcast",
+      "published_at": "2026-10-07T18:54:37+00:00",
+      "collected_at": "2026-10-16T04:43:46.267425+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/15/norman-mccubbin-obituary",
+      "title": "Norman McCubbin obituary",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/15/norman-mccubbin-obituary",
+      "published_at": "2026-10-15T18:49:45+00:00",
+      "collected_at": "2026-10-16T04:43:46.267441+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/us-news/video/2026/oct/14/spacex-rocket-launch-creates-glowing-space-jellyfish-cloud-video",
+      "title": "SpaceX rocket launch creates glowing 'space jellyfish' cloud – video",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/us-news/video/2026/oct/14/spacex-rocket-launch-creates-glowing-space-jellyfish-cloud-video",
+      "published_at": "2026-10-14T19:12:31+00:00",
+      "collected_at": "2026-10-16T04:43:46.267459+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/07/jonathan-the-giant-tortoise-194-offers-up-insight-into-secrets-of-longevity",
+      "title": "Jonathan the giant tortoise, 194, offers up insight into secrets of longevity",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/07/jonathan-the-giant-tortoise-194-offers-up-insight-into-secrets-of-longevity",
+      "published_at": "2026-10-07T18:00:02+00:00",
+      "collected_at": "2026-10-16T04:43:46.267474+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/12/did-you-solve-it-the-treacherous-puzzle-of-the-round-table",
+      "title": "Did you solve it? The treacherous puzzle of the round table",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/12/did-you-solve-it-the-treacherous-puzzle-of-the-round-table",
+      "published_at": "2026-10-12T16:00:00+00:00",
+      "collected_at": "2026-10-16T04:43:46.267489+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/oct/12/can-you-solve-it-the-treacherous-riddle-of-the-round-table",
+      "title": "Can you solve it? The treacherous riddle of the round table",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/oct/12/can-you-solve-it-the-treacherous-riddle-of-the-round-table",
+      "published_at": "2026-10-12T06:10:47+00:00",
+      "collected_at": "2026-10-16T04:43:46.267502+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/sep/28/did-you-solve-it-isaac-newtons-tower-drop-puzzle",
+      "title": "Did you solve it? Isaac Newton’s tower drop puzzle",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/sep/28/did-you-solve-it-isaac-newtons-tower-drop-puzzle",
+      "published_at": "2026-09-28T15:48:00+00:00",
+      "collected_at": "2026-10-16T04:43:46.267516+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/science/2026/sep/28/can-you-solve-it-isaac-newtons-tower-drop-puzzle",
+      "title": "Can you solve it? Isaac Newton’s tower drop puzzle",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/2026/sep/28/can-you-solve-it-isaac-newtons-tower-drop-puzzle",
+      "published_at": "2026-09-28T06:10:25+00:00",
+      "collected_at": "2026-10-16T04:43:46.267529+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/15/severe-drought-declared-six-areas-england-public-water-supplies-threat",
+      "title": "Severe drought declared in six areas of England as reservoirs run low",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/15/severe-drought-declared-six-areas-england-public-water-supplies-threat",
+      "published_at": "2026-10-15T12:18:27+00:00",
+      "collected_at": "2026-10-16T04:43:46.850690+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/global-development/2026/oct/15/afghanistan-drought-hunger-displaced-families-girls-child-marriage-poverty",
+      "title": "‘I am still a child, it cannot be good to be married’: how drought forces Afghan families to sell girls as brides",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/global-development/2026/oct/15/afghanistan-drought-hunger-displaced-families-girls-child-marriage-poverty",
+      "published_at": "2026-10-15T04:00:21+00:00",
+      "collected_at": "2026-10-16T04:43:46.850734+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/news/2026/oct/15/a-perfect-storm-how-the-super-el-nino-is-devastating-the-fishing-industry",
+      "title": "A perfect storm: how the super El Niño is devastating the fishing industry",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/news/2026/oct/15/a-perfect-storm-how-the-super-el-nino-is-devastating-the-fishing-industry",
+      "published_at": "2026-10-15T04:00:20+00:00",
+      "collected_at": "2026-10-16T04:43:46.850819+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/15/no-timeline-for-lifting-land-registry-paywall-as-ownership-remains-opaque",
+      "title": "No timeline for lifting Land Registry paywall as ownership remains opaque",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/15/no-timeline-for-lifting-land-registry-paywall-as-ownership-remains-opaque",
+      "published_at": "2026-10-15T06:00:24+00:00",
+      "collected_at": "2026-10-16T04:43:46.850840+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/15/conservation-aquariums-endangered-sharks-protected-waters-delaware-bay-us-sand-tiger-sharks",
+      "title": "‘Like selling wolves from Yellowstone’: how protected US sharks are being sold off to foreign aquariums",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/15/conservation-aquariums-endangered-sharks-protected-waters-delaware-bay-us-sand-tiger-sharks",
+      "published_at": "2026-10-15T09:00:14+00:00",
+      "collected_at": "2026-10-16T04:43:46.850860+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/14/mont-blanc-loses-metre-height",
+      "title": "Mont Blanc, the ‘roof of Europe’, loses more than a metre of height in a year",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/14/mont-blanc-loses-metre-height",
+      "published_at": "2026-10-14T15:33:52+00:00",
+      "collected_at": "2026-10-16T04:43:46.850878+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/15/country-diary-thrilled-by-darwin-and-the-wonder-of-worms",
+      "title": "Country diary: Thrilled by Darwin, and the wonder of worms | Lev Parikian",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/15/country-diary-thrilled-by-darwin-and-the-wonder-of-worms",
+      "published_at": "2026-10-15T04:30:21+00:00",
+      "collected_at": "2026-10-16T04:43:46.850894+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/global-development/2026/oct/15/the-hidden-costs-of-fracking-boom-in-argentina-linked-to-trail-of-sickness",
+      "title": "The hidden costs of fracking: boom in Argentina linked to trail of sickness",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/global-development/2026/oct/15/the-hidden-costs-of-fracking-boom-in-argentina-linked-to-trail-of-sickness",
+      "published_at": "2026-10-15T10:00:10+00:00",
+      "collected_at": "2026-10-16T04:43:46.850910+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/global-development/2026/oct/14/farming-insects-food-fodder-fertiliser-uganda",
+      "title": "From black soldier flies to mealworms: farming insects for food, fodder and fertiliser in Uganda",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/global-development/2026/oct/14/farming-insects-food-fodder-fertiliser-uganda",
+      "published_at": "2026-10-14T10:00:01+00:00",
+      "collected_at": "2026-10-16T04:43:46.850926+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/lifeandstyle/2026/oct/14/is-the-modern-economic-system-broken-these-urban-beekeepers-think-so-and-this-is-their-solution",
+      "title": "Is the modern economic system broken? These urban beekeepers think so – and this is their solution",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/lifeandstyle/2026/oct/14/is-the-modern-economic-system-broken-these-urban-beekeepers-think-so-and-this-is-their-solution",
+      "published_at": "2026-10-14T09:00:50+00:00",
+      "collected_at": "2026-10-16T04:43:46.850945+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/oct/14/green-politics-environmentalists-action",
+      "title": "For the future of green politics, look beyond the Green party | Zoe Williams",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/14/green-politics-environmentalists-action",
+      "published_at": "2026-10-14T17:15:25+00:00",
+      "collected_at": "2026-10-16T04:43:46.850962+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/14/is-it-really-madness-to-account-for-emissions-from-fossil-fuels-burned-overseas-the-coalition-sure-thinks-so",
+      "title": "Is it really ‘madness’ to account for emissions from fossil fuels burned overseas? The Coalition sure thinks so | Temperature Check",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/14/is-it-really-madness-to-account-for-emissions-from-fossil-fuels-burned-overseas-the-coalition-sure-thinks-so",
+      "published_at": "2026-10-14T14:14:43+00:00",
+      "collected_at": "2026-10-16T04:43:46.850979+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/oct/14/climate-crisis-insurance-risk-disaster-catastrophe",
+      "title": "I work for a major insurer. Much of my industry is fudging the numbers in the face of the climate crisis | Anonymous",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/14/climate-crisis-insurance-risk-disaster-catastrophe",
+      "published_at": "2026-10-14T10:00:01+00:00",
+      "collected_at": "2026-10-16T04:43:46.850996+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/commentisfree/2026/oct/12/super-el-nino-farms-prepare",
+      "title": "A super el Niño threatens our food system. Here’s how farms can prepare | Liz Carlisle",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/commentisfree/2026/oct/12/super-el-nino-farms-prepare",
+      "published_at": "2026-10-12T13:00:55+00:00",
+      "collected_at": "2026-10-16T04:43:46.851014+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/11/chimp-civil-war-john-mitani-chimps-uganda-aoe",
+      "title": "‘I didn’t want to write about this’: the man who first saw chimps waging civil war",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/11/chimp-civil-war-john-mitani-chimps-uganda-aoe",
+      "published_at": "2026-10-11T11:00:24+00:00",
+      "collected_at": "2026-10-16T04:43:46.851030+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/07/nature-library-colorado-us-wilderness-stargazing-camping-outdoors-aoe",
+      "title": "Tents, night-vision goggles and bear tracking kits: America’s first nature library opens",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/07/nature-library-colorado-us-wilderness-stargazing-camping-outdoors-aoe",
+      "published_at": "2026-10-07T11:00:07+00:00",
+      "collected_at": "2026-10-16T04:43:46.851046+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/01/el-nino-orangutans-indonesia-wildlife-destruction-aoe",
+      "title": "‘The toll is huge’: El Niño-driven wildfires overwhelm Indonesia’s orangutan population",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/01/el-nino-orangutans-indonesia-wildlife-destruction-aoe",
+      "published_at": "2026-10-01T03:00:25+00:00",
+      "collected_at": "2026-10-16T04:43:46.851064+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/sep/29/cambodia-chorng-indigenous-communities-siamese-crocodile-endangered-conservation-aoe",
+      "title": "Saving the Siamese crocodile: Cambodia moves to protect one of the world’s last wild populations",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/sep/29/cambodia-chorng-indigenous-communities-siamese-crocodile-endangered-conservation-aoe",
+      "published_at": "2026-09-29T05:00:54+00:00",
+      "collected_at": "2026-10-16T04:43:46.851081+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/08/norway-environment-nordic-mining-waste-pollution-fjord-dumping-salmon",
+      "title": "This is one of Norway’s most pristine fjords. So why is it being used as a dumping site for mine waste?",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/08/norway-environment-nordic-mining-waste-pollution-fjord-dumping-salmon",
+      "published_at": "2026-10-08T04:00:09+00:00",
+      "collected_at": "2026-10-16T04:43:46.851104+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/oct/05/to-cull-or-not-to-cull-greenland-debates-fate-of-worlds-slowest-shark",
+      "title": "To cull or not to cull: Greenland debates fate of world’s slowest shark",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/oct/05/to-cull-or-not-to-cull-greenland-debates-fate-of-worlds-slowest-shark",
+      "published_at": "2026-10-05T04:00:47+00:00",
+      "collected_at": "2026-10-16T04:43:46.851122+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/sep/30/beyond-priceless-how-a-halt-to-dredging-saved-the-seas-of-scotlands-summer-isles",
+      "title": "‘Beyond priceless’: how a halt to dredging saved the seas of Scotland’s Summer Isles",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/sep/30/beyond-priceless-how-a-halt-to-dredging-saved-the-seas-of-scotlands-summer-isles",
+      "published_at": "2026-09-30T10:00:22+00:00",
+      "collected_at": "2026-10-16T04:43:46.851139+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/2026/sep/24/mass-sardine-die-off-pits-survival-of-south-africas-penguins-against-fishers-livelihoods",
+      "title": "Mass sardine die-off pits survival of South Africa’s penguins against fishers’ livelihoods",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/2026/sep/24/mass-sardine-die-off-pits-survival-of-south-africas-penguins-against-fishers-livelihoods",
+      "published_at": "2026-09-24T08:00:11+00:00",
+      "collected_at": "2026-10-16T04:43:46.851155+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/gallery/2026/oct/14/wildlife-photographer-of-the-year-2026-winners-in-pictures",
+      "title": "Wildlife photographer of the year 2026 winners – in pictures",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/gallery/2026/oct/14/wildlife-photographer-of-the-year-2026-winners-in-pictures",
+      "published_at": "2026-10-14T07:41:54+00:00",
+      "collected_at": "2026-10-16T04:43:46.851170+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/video/2026/oct/13/honeybees-stinger-continues-to-pump-venom-once-detached-from-body-new-footage-shows-video",
+      "title": "Honeybee's stinger continues to pump venom once detached from body, new footage shows – video",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/video/2026/oct/13/honeybees-stinger-continues-to-pump-venom-once-detached-from-body-new-footage-shows-video",
+      "published_at": "2026-10-13T07:10:38+00:00",
+      "collected_at": "2026-10-16T04:43:46.851186+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.theguardian.com/environment/gallery/2026/oct/11/tesselaar-tulip-festival-silvan-victoria-in-pictures",
+      "title": "Blooming beautiful! The Tesselaar tulip festival – in pictures",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/gallery/2026/oct/11/tesselaar-tulip-festival-silvan-victoria-in-pictures",
+      "published_at": "2026-10-10T23:00:10+00:00",
+      "collected_at": "2026-10-16T04:43:46.851202+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://science.nasa.gov/image-article/apod-2026-october-16-chasing-the-international-space-station/",
+      "title": "APOD: 2026 October 16 – Chasing the International Space Station",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-16-chasing-the-international-space-station/",
+      "published_at": "2026-10-16T04:05:00+00:00",
+      "collected_at": "2026-10-16T04:43:47.090032+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://science.nasa.gov/earth/earth-observatory/isaias-dims-the-gulf-coast/",
+      "title": "Isaias Dims the Gulf Coast",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/earth/earth-observatory/isaias-dims-the-gulf-coast/",
+      "published_at": "2026-10-16T04:00:00+00:00",
+      "collected_at": "2026-10-16T04:43:47.090075+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
+      "title": "NASA to Help Unlock Mysteries of Mars’ Moons in Upcoming Mission",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/directorates/smd/planetary-science-division/nasa-to-help-unlock-mysteries-of-mars-moons-in-upcoming-mission/",
+      "published_at": "2026-10-15T19:58:08+00:00",
+      "collected_at": "2026-10-16T04:43:47.090101+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/",
+      "title": "NASA Satellites Observe Historic 2026 El Niño",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/",
+      "published_at": "2026-10-15T17:59:22+00:00",
+      "collected_at": "2026-10-16T04:43:47.090121+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
+      "title": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
+      "published_at": "2026-10-15T17:30:00+00:00",
+      "collected_at": "2026-10-16T04:43:47.090139+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/",
+      "title": "NASA to Conduct Low-Altitude Flights Over Texas Farmland",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/",
+      "published_at": "2026-10-15T16:42:10+00:00",
+      "collected_at": "2026-10-16T04:43:47.090156+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://science.nasa.gov/universe/nasa-welcomes-all-ages-experience-levels-for-space-apps-challenge/",
+      "title": "NASA Welcomes All Ages, Experience Levels for Space Apps Challenge",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/universe/nasa-welcomes-all-ages-experience-levels-for-space-apps-challenge/",
+      "published_at": "2026-10-15T16:13:08+00:00",
+      "collected_at": "2026-10-16T04:43:47.090173+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.nasa.gov/learning-resources/nasa-awards-enable-research-technology-to-build-future-workforce/",
+      "title": "NASA Awards Enable Research, Technology to Build Future Workforce",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://www.nasa.gov/learning-resources/nasa-awards-enable-research-technology-to-build-future-workforce/",
+      "published_at": "2026-10-15T15:57:47+00:00",
+      "collected_at": "2026-10-16T04:43:47.090191+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.nasa.gov/missions/artemis/artemis-2/rigorous-analysis-confirms-nasas-artemis-ii-heat-shield-performance/",
+      "title": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://www.nasa.gov/missions/artemis/artemis-2/rigorous-analysis-confirms-nasas-artemis-ii-heat-shield-performance/",
+      "published_at": "2026-10-15T14:57:21+00:00",
+      "collected_at": "2026-10-16T04:43:47.090209+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    },
+    {
+      "id": "https://www.nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves/",
+      "title": "Chandra Finds Possible Origin of ‘Treble Clef’ Waves",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://www.nasa.gov/image-article/chandra-finds-possible-origin-of-treble-clef-waves/",
+      "published_at": "2026-10-15T14:19:06+00:00",
+      "collected_at": "2026-10-16T04:43:47.090226+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "available": false,
+        "words": null,
+        "difficulty": null,
+        "coverage": null,
+        "basis": "暂无法分析：未获得获授权的完整正文。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用"
+    }
+  ],
+  "statuses": {
+    "guardian-science": {
+      "name": "The Guardian · Science",
+      "state": "成功",
+      "count": 25,
+      "last_success": "2026-10-16T04:43:46.270604+00:00",
+      "checked_at": "2026-10-16T04:43:45.988283+00:00"
+    },
+    "guardian-environment": {
+      "name": "The Guardian · Environment",
+      "state": "成功",
+      "count": 25,
+      "last_success": "2026-10-16T04:43:46.858429+00:00",
+      "checked_at": "2026-10-16T04:43:46.270609+00:00"
+    },
+    "nasa": {
+      "name": "NASA · News",
+      "state": "成功",
+      "count": 10,
+      "last_success": "2026-10-16T04:43:47.091476+00:00",
+      "checked_at": "2026-10-16T04:43:46.858446+00:00"
+    }
+  },
+  "last_success": "2026-10-16T04:43:47.091482+00:00",
+  "generated_at": "2026-10-16T04:43:47.091500+00:00",
+  "topic_rules": {
+    "科技": [
+      "technology",
+      "artificial intelligence",
+      "algorithm",
+      "digital",
+      "automation",
+      "robot",
+      "software"
+    ],
+    "教育": [
+      "education",
+      "school",
+      "university",
+      "student",
+      "learning",
+      "teacher",
+      "classroom"
+    ],
+    "经济": [
+      "economy",
+      "economic",
+      "inflation",
+      "market",
+      "trade",
+      "employment",
+      "finance"
+    ],
+    "环境": [
+      "climate",
+      "environment",
+      "carbon",
+      "biodiversity",
+      "ecosystem",
+      "conservation",
+      "pollution"
+    ],
+    "政治与社会": [
+      "politics",
+      "policy",
+      "election",
+      "democracy",
+      "government",
+      "society",
+      "community"
+    ],
+    "科学": [
+      "science",
+      "research",
+      "scientist",
+      "experiment",
+      "space",
+      "planet",
+      "astronomy"
+    ],
+    "历史与文化": [
+      "history",
+      "historical",
+      "ancient",
+      "archaeology",
+      "culture",
+      "museum",
+      "civilization"
+    ],
+    "健康": [
+      "health",
+      "medicine",
+      "disease",
+      "clinical",
+      "hospital",
+      "nutrition",
+      "patient"
+    ]
+  },
+  "exam_rules": {
+    "考研英语": [
+      "科技",
+      "教育",
+      "经济",
+      "环境",
+      "政治与社会"
+    ],
+    "IELTS": [
+      "环境",
+      "教育",
+      "科技",
+      "历史与文化",
+      "健康"
+    ],
+    "TOEFL": [
+      "科学",
+      "环境",
+      "历史与文化",
+      "教育",
+      "健康"
+    ]
+  },
+  "sources": [
+    {
+      "id": "guardian-science",
+      "name": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/rss"
+    },
+    {
+      "id": "guardian-environment",
+      "name": "The Guardian · Environment",
+      "url": "https://www.theguardian.com/environment/rss"
+    },
+    {
+      "id": "nasa",
+      "name": "NASA · News",
+      "url": "https://www.nasa.gov/feed/"
+    }
+  ],
+  "scheduler": {
+    "configured": true,
+    "cron": "23 0,12 * * *",
+    "timezone": "UTC",
+    "last_scheduled_run": null,
+    "workflow_url": "https://github.com/Cocoachennie/reading/actions/workflows/pages.yml"
+  },
+  "collection_event": "local"
+}

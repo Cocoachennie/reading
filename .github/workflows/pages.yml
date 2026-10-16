@@ -1,0 +1,65 @@
+name: Update articles and deploy Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # UTC -> Asia/Shanghai 08:23 and 20:23. GitHub may delay scheduled runs.
+    - cron: '23 0,12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test collection, analysis, and static build
+        run: |
+          python -m unittest discover -s tests -v
+          node --check static/app.js
+      - name: Collect public RSS metadata (preserve articles if sources fail)
+        run: python scripts/update_articles.py
+      - name: Persist public metadata and real source status
+        run: |
+          if ! git diff --quiet -- static/data/articles.json; then
+            git add static/data/articles.json
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Update reading catalog [skip ci]'
+            git push origin HEAD:main
+          fi
+      - name: Build static site
+        run: python scripts/build_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
