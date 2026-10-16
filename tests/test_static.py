@@ -100,8 +100,8 @@ class CatalogTests(unittest.TestCase):
     def test_checked_in_catalog_is_valid_and_matches_rules(self):
         state = catalog.validate_catalog(json.loads(catalog.CATALOG.read_text(encoding='utf-8')))
         self.assertTrue(state['articles'])
-        self.assertTrue(all(not a.get('body') for a in state['articles']))
-        self.assertEqual(set(state['statuses']), {s['id'] for s in catalog.SOURCES})
+        self.assertTrue(all(not a.get('body') or catalog.permitted_body(a) for a in state['articles']))
+        self.assertTrue({s['id'] for s in catalog.SOURCES}.issubset(state['statuses']))
 
 
 if __name__ == '__main__':

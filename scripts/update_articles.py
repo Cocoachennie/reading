@@ -4,17 +4,19 @@ import copy
 import json
 import os
 import sys
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from scripts.licensed_sources import permitted_body, collect, BOOKS, source_name
 from server import SOURCES, TOPICS, EXAMS, decorate, demos, fetch, now, valid_url
 
 CATALOG = ROOT / 'static' / 'data' / 'articles.json'
 WORKFLOW_URL = 'https://github.com/Cocoachennie/reading/actions/workflows/pages.yml'
-ALLOWED_SOURCES = {source['name'] for source in SOURCES}
+ALLOWED_SOURCES = {source['name'] for source in SOURCES} | {source_name(b) for b in BOOKS}
 PUBLIC_FIELDS = ('id', 'title', 'summary_en', 'summary_zh', 'source', 'url',
-                 'published_at', 'collected_at', 'demo', 'rights')
+                 'published_at', 'collected_at', 'demo', 'rights', 'license', 'content_scope')
 
 
 def public_article(article):
@@ -30,7 +32,7 @@ def public_article(article):
             raise ValueError('公共文章 ID 必须等于原文链接')
     safe = {key: article.get(key) for key in PUBLIC_FIELDS}
     safe['summary_en'] = safe.get('summary_en') or ''
-    safe['body'] = ''
+    safe['body'] = article.get('body','') if permitted_body(article) else ''
     return decorate(safe)
 
 
@@ -42,8 +44,8 @@ def validate_catalog(catalog):
     ids = set()
     for article in catalog['articles']:
         public_article(article)
-        if article.get('body'):
-            raise ValueError('公开 JSON 不允许包含正文')
+        if article.get('body') and not permitted_body(article):
+            raise ValueError('公开 JSON 不允许包含未经许可验证的正文')
         if article['id'] in ids:
             raise ValueError('文章 ID 重复')
         ids.add(article['id'])
@@ -114,6 +116,9 @@ def update_catalog(previous, fetcher=fetch, event='local'):
 
 def write_catalog(path, catalog):
     validate_catalog(catalog)
+    result = subprocess.run(['node', str(ROOT / 'scripts/analyze_catalog.cjs')], input=json.dumps(catalog,ensure_ascii=False),capture_output=True,text=True,check=True)
+    catalog=json.loads(result.stdout)
+    validate_catalog(catalog)
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix('.tmp')
     temporary.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
@@ -130,7 +135,9 @@ def main():
         previous.update(topic_rules=TOPICS, exam_rules=EXAMS, sources=SOURCES)
         state = validate_catalog(previous)
     else:
-        state = update_catalog(previous, event=os.environ.get('GITHUB_EVENT_NAME', 'local'))
+        state = collect(update_catalog(previous, event=os.environ.get('GITHUB_EVENT_NAME', 'local')))
+    state['articles']=[a for a in state['articles'] if not a.get('demo')]
+    state['platform_version']='2.0'
     write_catalog(CATALOG, state)
     for status in state['statuses'].values():
         print(f"{status['name']}: {status['state']}" + (f" — {status['error']}" if status.get('error') else ''))
