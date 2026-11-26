@@ -22,7 +22,7 @@
         "revision": "43035bcc5dd238f2e236ef532a01f11d6a59fc9d",
         "revision_url": "https://github.com/openstax/osbooks-psychology/blob/43035bcc5dd238f2e236ef532a01f11d6a59fc9d/modules/m82167/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-psychology/43035bcc5dd238f2e236ef532a01f11d6a59fc9d/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.744651+00:00",
+        "verified_at": "2026-11-26T08:37:25.352879+00:00",
         "body_sha256": "77b32ffc3a848afe00a96fa03aa055818d0728e285dbba4cc50cdb532e8b2a33"
       },
       "analysis": {
@@ -424,7 +424,7 @@
         "revision": "43035bcc5dd238f2e236ef532a01f11d6a59fc9d",
         "revision_url": "https://github.com/openstax/osbooks-psychology/blob/43035bcc5dd238f2e236ef532a01f11d6a59fc9d/modules/m82162/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-psychology/43035bcc5dd238f2e236ef532a01f11d6a59fc9d/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.863349+00:00",
+        "verified_at": "2026-11-26T08:37:25.502920+00:00",
         "body_sha256": "ecd9012bb6a70fb94a64a59782f4057f4f895ee4f9bd91f0a5d335e49f9721f8"
       },
       "analysis": {
@@ -830,7 +830,7 @@
         "revision": "bc1be223bd23a00cc68efb6195dc183f4e1e228a",
         "revision_url": "https://github.com/openstax/osbooks-biology-bundle/blob/bc1be223bd23a00cc68efb6195dc183f4e1e228a/modules/m66427/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-biology-bundle/bc1be223bd23a00cc68efb6195dc183f4e1e228a/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.717982+00:00",
+        "verified_at": "2026-11-26T08:37:25.312408+00:00",
         "body_sha256": "6457abebee37c51873b322b6ece47533ef31a91848fa83ed5046a0d70cde5d23"
       },
       "analysis": {
@@ -1233,7 +1233,7 @@
         "revision": "bc1be223bd23a00cc68efb6195dc183f4e1e228a",
         "revision_url": "https://github.com/openstax/osbooks-biology-bundle/blob/bc1be223bd23a00cc68efb6195dc183f4e1e228a/modules/m66428/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-biology-bundle/bc1be223bd23a00cc68efb6195dc183f4e1e228a/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.849361+00:00",
+        "verified_at": "2026-11-26T08:37:25.468119+00:00",
         "body_sha256": "4f0f754ac3f1ad4edf0dc74eb1658bb66803e0cd3138ffefb2ddfc48159cd88c"
       },
       "analysis": {
@@ -1625,7 +1625,7 @@
         "revision": "dff6acf8df597ceda73985308f838ed38417a606",
         "revision_url": "https://github.com/openstax/osbooks-astronomy/blob/dff6acf8df597ceda73985308f838ed38417a606/modules/m59747/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-astronomy/dff6acf8df597ceda73985308f838ed38417a606/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.718641+00:00",
+        "verified_at": "2026-11-26T08:37:25.266766+00:00",
         "body_sha256": "eeafc47be54a231ad46168a34918f7a4970373d9174f262a775ecdd3a6412304"
       },
       "analysis": {
@@ -1904,7 +1904,7 @@
         "revision": "dff6acf8df597ceda73985308f838ed38417a606",
         "revision_url": "https://github.com/openstax/osbooks-astronomy/blob/dff6acf8df597ceda73985308f838ed38417a606/modules/m59755/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-astronomy/dff6acf8df597ceda73985308f838ed38417a606/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.871225+00:00",
+        "verified_at": "2026-11-26T08:37:25.428510+00:00",
         "body_sha256": "151a529f9ea31c0ee659f433aac43844c6500bf404300f05c3afcc77b7cdd9ff"
       },
       "analysis": {
@@ -2240,7 +2240,7 @@
         "revision": "cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5",
         "revision_url": "https://github.com/openstax/osbooks-principles-economics-bundle/blob/cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5/modules/m63580/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-principles-economics-bundle/cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.686733+00:00",
+        "verified_at": "2026-11-26T08:37:25.253280+00:00",
         "body_sha256": "a71bc5fc971afb4d13b1f66bc863f12b6f1735450f536fd7bf0940eb7200d141"
       },
       "analysis": {
@@ -2587,7 +2587,7 @@
         "revision": "cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5",
         "revision_url": "https://github.com/openstax/osbooks-principles-economics-bundle/blob/cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5/modules/m63581/index.cnxml",
         "license_source": "https://raw.githubusercontent.com/openstax/osbooks-principles-economics-bundle/cf93bf19bbbca7d1324c2d31af0e81740ae3e5f5/LICENSE",
-        "verified_at": "2026-11-25T21:50:17.850967+00:00",
+        "verified_at": "2026-11-26T08:37:25.387477+00:00",
         "body_sha256": "2f0c0ec651e1792a533e0857cad9d16f88dee988aee2864b8916b15bac846e08"
       },
       "analysis": {
@@ -2919,351 +2919,6 @@
           "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 46/50（按正文主题线索相对密度加权，经济、政策）；建议篇幅 450–900 词。语言 28/30（估计 B2），篇幅 20/20；总分 94/100。不是官方评分，也不证明被真题采用。"
         }
       ]
-    },
-    {
-      "id": "https://www.theguardian.com/science/audio/2026/nov/12/is-bmi-working-cop31-latest-the-science-of-great-conversation-podcast",
-      "title": "Is BMI working? Cop31 latest, the science of great conversation – podcast",
-      "summary_en": "",
-      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
-      "source": "The Guardian · Science",
-      "url": "https://www.theguardian.com/science/audio/2026/nov/12/is-bmi-working-cop31-latest-the-science-of-great-conversation-podcast",
-      "published_at": "2026-11-12T05:00:09+00:00",
-      "collected_at": "2026-11-12T20:07:57.170166+00:00",
-      "demo": false,
-      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
-      "license": null,
-      "content_scope": null,
-      "body": "",
-      "topics": [],
-      "recommendations": [],
-      "analysis": {
-        "version": "2.0.0",
-        "status": "metadata_only",
-        "available": false,
-        "words": null,
-        "cefr": null,
-        "difficulty": null,
-        "reading_minutes": null,
-        "long_sentences": null,
-        "keywords": [],
-        "core_vocabulary": [],
-        "academic_vocabulary": [],
-        "coverage": null,
-        "topic_hits": {},
-        "topic_strengths": {},
-        "topics": [],
-        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
-      },
-      "evidence": null,
-      "source_label": "推荐阅读来源 · 未核实真题采用",
-      "exam_scores": {
-        "考研英语": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "IELTS": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "TOEFL": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        }
-      }
-    },
-    {
-      "id": "https://www.theguardian.com/science/2026/oct/26/can-you-solve-it-a-magical-melody-from-the-mozart-of-math",
-      "title": "Can you solve it? A magical melody from the Mozart of math",
-      "summary_en": "",
-      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
-      "source": "The Guardian · Science",
-      "url": "https://www.theguardian.com/science/2026/oct/26/can-you-solve-it-a-magical-melody-from-the-mozart-of-math",
-      "published_at": "2026-10-26T07:10:24+00:00",
-      "collected_at": "2026-11-12T20:07:57.170482+00:00",
-      "demo": false,
-      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
-      "license": null,
-      "content_scope": null,
-      "body": "",
-      "topics": [],
-      "recommendations": [],
-      "analysis": {
-        "version": "2.0.0",
-        "status": "metadata_only",
-        "available": false,
-        "words": null,
-        "cefr": null,
-        "difficulty": null,
-        "reading_minutes": null,
-        "long_sentences": null,
-        "keywords": [],
-        "core_vocabulary": [],
-        "academic_vocabulary": [],
-        "coverage": null,
-        "topic_hits": {},
-        "topic_strengths": {},
-        "topics": [],
-        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
-      },
-      "evidence": null,
-      "source_label": "推荐阅读来源 · 未核实真题采用",
-      "exam_scores": {
-        "考研英语": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "IELTS": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "TOEFL": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        }
-      }
-    },
-    {
-      "id": "https://www.theguardian.com/environment/2026/nov/12/trump-loser-john-kerry-cop31",
-      "title": "Trump the ‘biggest loser’ for scrapping climate action, John Kerry says at Cop31",
-      "summary_en": "",
-      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
-      "source": "The Guardian · Environment",
-      "url": "https://www.theguardian.com/environment/2026/nov/12/trump-loser-john-kerry-cop31",
-      "published_at": "2026-11-12T11:00:48+00:00",
-      "collected_at": "2026-11-12T20:07:57.426360+00:00",
-      "demo": false,
-      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
-      "license": null,
-      "content_scope": null,
-      "body": "",
-      "topics": [],
-      "recommendations": [],
-      "analysis": {
-        "version": "2.0.0",
-        "status": "metadata_only",
-        "available": false,
-        "words": null,
-        "cefr": null,
-        "difficulty": null,
-        "reading_minutes": null,
-        "long_sentences": null,
-        "keywords": [],
-        "core_vocabulary": [],
-        "academic_vocabulary": [],
-        "coverage": null,
-        "topic_hits": {},
-        "topic_strengths": {},
-        "topics": [],
-        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
-      },
-      "evidence": null,
-      "source_label": "推荐阅读来源 · 未核实真题采用",
-      "exam_scores": {
-        "考研英语": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "IELTS": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "TOEFL": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        }
-      }
-    },
-    {
-      "id": "https://www.theguardian.com/environment/2026/nov/12/uk-ministers-no-plans-publish-climate-crisis-report",
-      "title": "UK ministers have no plans to publish explosive report on climate crisis",
-      "summary_en": "",
-      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
-      "source": "The Guardian · Environment",
-      "url": "https://www.theguardian.com/environment/2026/nov/12/uk-ministers-no-plans-publish-climate-crisis-report",
-      "published_at": "2026-11-12T17:51:24+00:00",
-      "collected_at": "2026-11-12T20:07:57.426497+00:00",
-      "demo": false,
-      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
-      "license": null,
-      "content_scope": null,
-      "body": "",
-      "topics": [],
-      "recommendations": [],
-      "analysis": {
-        "version": "2.0.0",
-        "status": "metadata_only",
-        "available": false,
-        "words": null,
-        "cefr": null,
-        "difficulty": null,
-        "reading_minutes": null,
-        "long_sentences": null,
-        "keywords": [],
-        "core_vocabulary": [],
-        "academic_vocabulary": [],
-        "coverage": null,
-        "topic_hits": {},
-        "topic_strengths": {},
-        "topics": [],
-        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
-      },
-      "evidence": null,
-      "source_label": "推荐阅读来源 · 未核实真题采用",
-      "exam_scores": {
-        "考研英语": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "IELTS": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "TOEFL": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        }
-      }
-    },
-    {
-      "id": "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
-      "title": "The planet ‘is being killed’, Greta Thunberg tells Cop31 climate summit",
-      "summary_en": "",
-      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
-      "source": "The Guardian · Environment",
-      "url": "https://www.theguardian.com/environment/2026/nov/12/greta-thunberg-cop31-climate-summit",
-      "published_at": "2026-11-12T16:39:47+00:00",
-      "collected_at": "2026-11-12T20:07:57.426511+00:00",
-      "demo": false,
-      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
-      "license": null,
-      "content_scope": null,
-      "body": "",
-      "topics": [],
-      "recommendations": [],
-      "analysis": {
-        "version": "2.0.0",
-        "status": "metadata_only",
-        "available": false,
-        "words": null,
-        "cefr": null,
-        "difficulty": null,
-        "reading_minutes": null,
-        "long_sentences": null,
-        "keywords": [],
-        "core_vocabulary": [],
-        "academic_vocabulary": [],
-        "coverage": null,
-        "topic_hits": {},
-        "topic_strengths": {},
-        "topics": [],
-        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
-      },
-      "evidence": null,
-      "source_label": "推荐阅读来源 · 未核实真题采用",
-      "exam_scores": {
-        "考研英语": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "IELTS": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        },
-        "TOEFL": {
-          "score": null,
-          "topic_score": 0,
-          "language_score": null,
-          "length_score": null,
-          "provisional": true,
-          "eligible": false,
-          "matched_topics": [],
-          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
-        }
-      }
     },
     {
       "id": "https://www.theguardian.com/environment/2026/nov/12/start-listening-indigenous-activist-implores-albanese-to-block-new-coal-oil-and-gas",
@@ -34990,7 +34645,7 @@
       "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
       "source": "The Guardian · Environment",
       "url": "https://www.theguardian.com/us-news/2026/nov/25/california-flooding-high-tides",
-      "published_at": "2026-11-25T17:20:26+00:00",
+      "published_at": "2026-11-25T22:56:36+00:00",
       "collected_at": "2026-11-25T21:50:16.436345+00:00",
       "demo": false,
       "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
@@ -36983,6 +36638,351 @@
           "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
         }
       }
+    },
+    {
+      "id": "https://www.theguardian.com/science/audio/2026/nov/26/britains-sex-slump-nuclear-weapons-in-space-key-suspect-in-bowel-cancer-rise-podcast",
+      "title": "Britain’s sex slump, nuclear weapons in space, key suspect in bowel cancer rise – podcast",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Science",
+      "url": "https://www.theguardian.com/science/audio/2026/nov/26/britains-sex-slump-nuclear-weapons-in-space-key-suspect-in-bowel-cancer-rise-podcast",
+      "published_at": "2026-11-26T05:00:45+00:00",
+      "collected_at": "2026-11-26T08:37:23.784288+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "license": null,
+      "content_scope": null,
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "version": "2.0.0",
+        "status": "metadata_only",
+        "available": false,
+        "words": null,
+        "cefr": null,
+        "difficulty": null,
+        "reading_minutes": null,
+        "long_sentences": null,
+        "keywords": [],
+        "core_vocabulary": [],
+        "academic_vocabulary": [],
+        "coverage": null,
+        "topic_hits": {},
+        "topic_strengths": {},
+        "topics": [],
+        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用",
+      "exam_scores": {
+        "考研英语": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "IELTS": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "TOEFL": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        }
+      }
+    },
+    {
+      "id": "https://www.theguardian.com/us-news/2026/nov/25/brendan-carr-fcc-abc-licenses",
+      "title": "Judge blocks Brendan Carr-led FCC from taking any further action against ABC’s licenses",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Business",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/brendan-carr-fcc-abc-licenses",
+      "published_at": "2026-11-26T02:52:47+00:00",
+      "collected_at": "2026-11-26T08:37:24.052113+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "license": null,
+      "content_scope": null,
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "version": "2.0.0",
+        "status": "metadata_only",
+        "available": false,
+        "words": null,
+        "cefr": null,
+        "difficulty": null,
+        "reading_minutes": null,
+        "long_sentences": null,
+        "keywords": [],
+        "core_vocabulary": [],
+        "academic_vocabulary": [],
+        "coverage": null,
+        "topic_hits": {},
+        "topic_strengths": {},
+        "topics": [],
+        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用",
+      "exam_scores": {
+        "考研英语": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "IELTS": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "TOEFL": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        }
+      }
+    },
+    {
+      "id": "https://www.theguardian.com/education/2026/nov/26/children-overcrowded-homes-gcse-results-study",
+      "title": "Children in overcrowded homes get poorer GCSE results, study finds",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "The Guardian · Education",
+      "url": "https://www.theguardian.com/education/2026/nov/26/children-overcrowded-homes-gcse-results-study",
+      "published_at": "2026-11-26T00:01:39+00:00",
+      "collected_at": "2026-11-26T08:37:24.225258+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "license": null,
+      "content_scope": null,
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "version": "2.0.0",
+        "status": "metadata_only",
+        "available": false,
+        "words": null,
+        "cefr": null,
+        "difficulty": null,
+        "reading_minutes": null,
+        "long_sentences": null,
+        "keywords": [],
+        "core_vocabulary": [],
+        "academic_vocabulary": [],
+        "coverage": null,
+        "topic_hits": {},
+        "topic_strengths": {},
+        "topics": [],
+        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用",
+      "exam_scores": {
+        "考研英语": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "IELTS": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "TOEFL": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        }
+      }
+    },
+    {
+      "id": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/",
+      "title": "APOD: 2026 November 26 – Eye in the Sky: The Milky Way over Lençóis",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/",
+      "published_at": "2026-11-26T05:05:00+00:00",
+      "collected_at": "2026-11-26T08:37:24.486554+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "license": null,
+      "content_scope": null,
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "version": "2.0.0",
+        "status": "metadata_only",
+        "available": false,
+        "words": null,
+        "cefr": null,
+        "difficulty": null,
+        "reading_minutes": null,
+        "long_sentences": null,
+        "keywords": [],
+        "core_vocabulary": [],
+        "academic_vocabulary": [],
+        "coverage": null,
+        "topic_hits": {},
+        "topic_strengths": {},
+        "topics": [],
+        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用",
+      "exam_scores": {
+        "考研英语": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "IELTS": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "TOEFL": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        }
+      }
+    },
+    {
+      "id": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/",
+      "title": "Seeking Refuge on Resolution Island",
+      "summary_en": "",
+      "summary_zh": "RSS 元数据条目；尚未提供人工中文简介，请前往原文阅读。",
+      "source": "NASA · News",
+      "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/",
+      "published_at": "2026-11-26T05:01:00+00:00",
+      "collected_at": "2026-11-26T08:37:24.486584+00:00",
+      "demo": false,
+      "rights": "仅收集公开 RSS 标题、链接及日期；未复制全文，未获取转载授权。",
+      "license": null,
+      "content_scope": null,
+      "body": "",
+      "topics": [],
+      "recommendations": [],
+      "analysis": {
+        "version": "2.0.0",
+        "status": "metadata_only",
+        "available": false,
+        "words": null,
+        "cefr": null,
+        "difficulty": null,
+        "reading_minutes": null,
+        "long_sentences": null,
+        "keywords": [],
+        "core_vocabulary": [],
+        "academic_vocabulary": [],
+        "coverage": null,
+        "topic_hits": {},
+        "topic_strengths": {},
+        "topics": [],
+        "basis": "未取得允许站内使用的正文；不使用标题或摘要计算全文指标。"
+      },
+      "evidence": null,
+      "source_label": "推荐阅读来源 · 未核实真题采用",
+      "exam_scores": {
+        "考研英语": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "考研英语：社会、经济、政策与论证表达；编辑参考方向，尚未用真题语料校准。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 450–900 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "IELTS": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "IELTS：科学与半学术说明、环境、心理和教育。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 700–1400 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        },
+        "TOEFL": {
+          "score": null,
+          "topic_score": 0,
+          "language_score": null,
+          "length_score": null,
+          "provisional": true,
+          "eligible": false,
+          "matched_topics": [],
+          "reason": "TOEFL：自然科学与人文学科的学术说明。主题 0/50（按标题/允许的简介主题线索相对密度加权，尚无充分主题线索）；建议篇幅 550–1000 词。未取得可分析正文，只有主题预评分，完整适配分暂不可计算。不是官方评分，也不证明被真题采用。"
+        }
+      }
     }
   ],
   "statuses": {
@@ -36990,75 +36990,75 @@
       "name": "The Guardian · Science",
       "state": "成功",
       "count": 25,
-      "last_success": "2026-11-25T21:50:16.343210+00:00",
-      "checked_at": "2026-11-25T21:50:16.163937+00:00"
+      "last_success": "2026-11-26T08:37:23.788248+00:00",
+      "checked_at": "2026-11-26T08:37:23.662372+00:00"
     },
     "guardian-environment": {
       "name": "The Guardian · Environment",
       "state": "成功",
       "count": 25,
-      "last_success": "2026-11-25T21:50:16.440588+00:00",
-      "checked_at": "2026-11-25T21:50:16.343216+00:00"
+      "last_success": "2026-11-26T08:37:23.976947+00:00",
+      "checked_at": "2026-11-26T08:37:23.788255+00:00"
     },
     "nasa": {
       "name": "NASA · News",
       "state": "成功",
       "count": 10,
-      "last_success": "2026-11-25T21:50:16.992147+00:00",
-      "checked_at": "2026-11-25T21:50:16.853171+00:00"
+      "last_success": "2026-11-26T08:37:24.488099+00:00",
+      "checked_at": "2026-11-26T08:37:24.328459+00:00"
     },
     "openstax-osbooks-psychology": {
       "name": "OpenStax · Psychology 2e",
       "state": "成功",
-      "last_success": "2026-11-25T21:50:17.863585+00:00",
-      "checked_at": "2026-11-25T21:50:17.863587+00:00",
+      "last_success": "2026-11-26T08:37:25.503189+00:00",
+      "checked_at": "2026-11-26T08:37:25.503190+00:00",
       "count": 2
     },
     "openstax-osbooks-biology-bundle": {
       "name": "OpenStax · Biology 2e",
       "state": "成功",
-      "last_success": "2026-11-25T21:50:17.863635+00:00",
-      "checked_at": "2026-11-25T21:50:17.863636+00:00",
+      "last_success": "2026-11-26T08:37:25.503249+00:00",
+      "checked_at": "2026-11-26T08:37:25.503250+00:00",
       "count": 2
     },
     "openstax-osbooks-astronomy": {
       "name": "OpenStax · Astronomy 2e",
       "state": "成功",
-      "last_success": "2026-11-25T21:50:17.871367+00:00",
-      "checked_at": "2026-11-25T21:50:17.871369+00:00",
+      "last_success": "2026-11-26T08:37:25.503287+00:00",
+      "checked_at": "2026-11-26T08:37:25.503289+00:00",
       "count": 2
     },
     "openstax-osbooks-principles-economics-bundle": {
       "name": "OpenStax · Principles of Economics 3e",
       "state": "成功",
-      "last_success": "2026-11-25T21:50:17.871414+00:00",
-      "checked_at": "2026-11-25T21:50:17.871415+00:00",
+      "last_success": "2026-11-26T08:37:25.503322+00:00",
+      "checked_at": "2026-11-26T08:37:25.503323+00:00",
       "count": 2
     },
     "guardian-business": {
       "name": "The Guardian · Business",
       "state": "成功",
       "count": 19,
-      "last_success": "2026-11-25T21:50:16.552931+00:00",
-      "checked_at": "2026-11-25T21:50:16.440594+00:00"
+      "last_success": "2026-11-26T08:37:24.055395+00:00",
+      "checked_at": "2026-11-26T08:37:23.976954+00:00"
     },
     "guardian-education": {
       "name": "The Guardian · Education",
       "state": "成功",
       "count": 16,
-      "last_success": "2026-11-25T21:50:16.744640+00:00",
-      "checked_at": "2026-11-25T21:50:16.552937+00:00"
+      "last_success": "2026-11-26T08:37:24.228104+00:00",
+      "checked_at": "2026-11-26T08:37:24.055400+00:00"
     },
     "guardian-culture": {
       "name": "The Guardian · Culture",
       "state": "成功",
       "count": 25,
-      "last_success": "2026-11-25T21:50:16.853164+00:00",
-      "checked_at": "2026-11-25T21:50:16.744647+00:00"
+      "last_success": "2026-11-26T08:37:24.328444+00:00",
+      "checked_at": "2026-11-26T08:37:24.228110+00:00"
     }
   },
-  "last_success": "2026-11-25T21:50:17.871411+00:00",
-  "generated_at": "2026-11-25T21:50:16.992621+00:00",
+  "last_success": "2026-11-26T08:37:25.503319+00:00",
+  "generated_at": "2026-11-26T08:37:24.488570+00:00",
   "topic_rules": {
     "科技": [
       "technology",
@@ -37192,7 +37192,7 @@
     "configured": true,
     "cron": "23 0,12 * * *",
     "timezone": "UTC",
-    "last_scheduled_run": "2026-11-25T21:50:16.992627+00:00",
+    "last_scheduled_run": "2026-11-26T08:37:24.488575+00:00",
     "workflow_url": "https://github.com/Cocoachennie/reading/actions/workflows/pages.yml"
   },
   "collection_event": "schedule",
